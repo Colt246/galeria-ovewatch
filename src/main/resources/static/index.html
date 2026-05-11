@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Héroes – Overwatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <h1 class="m-0">Galería de Héroes – Overwatch</h1>
+        <button id="btnModo" class="btn btn-outline-light btn-sm">☀️ Modo Claro</button>
+    </div>
+    <div class="d-flex flex-wrap gap-3 mt-3 align-items-center">
+        <input type="text" id="buscar" class="form-control form-control-sm w-auto" placeholder="Nombre del héroe...">
+        <select id="filtroRol" class="form-select form-select-sm w-auto">
+            <option value="todos">Todos los roles</option>
+            <option value="tanque">Tanque</option>
+            <option value="dps">DPS</option>
+            <option value="apoyo">Apoyo</option>
+        </select>
+        <select id="orden" class="form-select form-select-sm w-auto">
+            <option value="az">A → Z</option>
+            <option value="za">Z → A</option>
+        </select>
+        <button id="btnAnadir" class="btn btn-success btn-sm">➕ Añadir héroe</button>
+    </div>
+</header>
+
+<main class="container-fluid p-4">
+    <div id="galeria" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+</main>
+
+<!-- Modal detalle héroe -->
+<div class="modal fade" id="modalDetalle" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <h4 class="modal-title w-100 text-center border-bottom border-secondary pb-2"
+                    id="modalNombre" style="color:#e94560;font-weight:bold;letter-spacing:1px;"></h4>
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2"
+                        data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body pt-2">
+                <div class="row g-3">
+                    <div class="col-md-4 d-flex flex-column align-items-center text-center gap-2">
+                        <img id="modalImg" src="" alt="" class="img-fluid rounded"
+                             style="max-height:180px;object-fit:cover;width:100%;">
+                        <p id="modalDesc" class="small mb-0 texto-secundario text-start"></p>
+                        <p class="mb-0"><strong>Vida:</strong> <span id="modalVida"></span></p>
+                        <div id="modalPasivaRol" class="w-100 rounded p-2 text-center bloque-pasiva-rol"></div>
+                    </div>
+                    <div class="col-md-8 d-flex flex-column gap-2">
+                        <div class="row g-2" id="modalFilaSuperior"></div>
+                        <div class="p-2 rounded bloque-habilidad">
+                            <p class="mb-1 fw-bold small" style="color:#e94560;">Habilidades</p>
+                            <div id="modalHabilidades"></div>
+                        </div>
+                        <div id="modalDefinitiva" class="p-2 rounded bloque-definitiva"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal añadir héroe -->
+<div class="modal fade" id="modalAnadir" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Añadir nuevo héroe</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="nuevoId"     class="form-control mb-2" placeholder="ID (sin espacios, ej: soldier76)">
+                <input type="text" id="nuevoNombre" class="form-control mb-2" placeholder="Nombre">
+                <select id="nuevoRol" class="form-select mb-2">
+                    <option value="tanque">Tanque</option>
+                    <option value="dps">DPS</option>
+                    <option value="apoyo">Apoyo</option>
+                </select>
+                <textarea id="nuevoDesc" class="form-control mb-2" placeholder="Descripción"></textarea>
+                <input type="number" id="nuevoVida" class="form-control mb-3" placeholder="Vida (número)">
+                <button id="btnConfirmarAnadir" class="btn btn-success w-100">Añadir</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center py-3 mt-4" style="background-color:#16213e; border-top: 2px solid #0f3460; color:#aaa; font-size:0.85rem;">
+    <p class="mb-1">
+        <span style="color:#e94560; font-weight:bold;">Galería de Héroes – Overwatch</span>
+    </p>
+    <p class="mb-1">
+        Proyecto educativo desarrollado por <strong style="color:#e0e0e0;">Sergio Navarro Fernández</strong>
+    </p>
+    <p class="mb-1">
+        Overwatch y todos sus personajes son propiedad de
+        <a href="https://overwatch.blizzard.com" target="_blank" style="color:#4a90d9; text-decoration:none;">Blizzard Entertainment</a>.
+        Este proyecto no tiene fines comerciales.
+    </p>
+    <p class="mb-0" style="font-size:0.75rem;">© 2026 · Proyecto Final – Programación y Lenguaje de Marcas</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
