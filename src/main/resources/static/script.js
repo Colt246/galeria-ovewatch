@@ -153,19 +153,123 @@ document.getElementById("btnModo").addEventListener("click", () => {
 });
 
 // Añadir héroe
-document.getElementById("btnAnadir").addEventListener("click", () =>
-    new bootstrap.Modal(document.getElementById("modalAnadir")).show());
+document.getElementById("btnAnadir").addEventListener("click", () => {
+    // Limpiar formulario
+    document.getElementById("nuevoNombre").value = "";
+    document.getElementById("nuevoRol").value = "tanque";
+    document.getElementById("nuevoVida").value = "";
+    document.getElementById("nuevoDesc").value = "";
+    document.getElementById("nuevoPortada").value = "";
+    document.getElementById("pasivaNombre").value = "";
+    document.getElementById("pasivaIcono").value = "";
+    document.getElementById("pasivaDesc").value = "";
+    document.getElementById("defNombre").value = "";
+    document.getElementById("defIcono").value = "";
+    document.getElementById("defDesc").value = "";
+    document.getElementById("contenedorArmas").innerHTML = "";
+    document.getElementById("contenedorHabilidades").innerHTML = "";
+    new bootstrap.Modal(document.getElementById("modalAnadir")).show();
+});
+
+// Función para crear una fila de arma o habilidad
+function crearFilaHabilidad(contenedorId) {
+    const contenedor = document.getElementById(contenedorId);
+    const fila = document.createElement("div");
+    fila.className = "row g-2 mb-2 align-items-center";
+    fila.innerHTML = `
+        <div class="col-md-4">
+            <input type="text" class="form-control form-control-sm campo-nombre" placeholder="Nombre">
+        </div>
+        <div class="col-md-3">
+            <input type="file" class="form-control form-control-sm campo-icono" accept="image/*">
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control form-control-sm campo-desc" placeholder="Descripción">
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-danger btn-sm w-100" onclick="this.closest('.row').remove()">✕</button>
+        </div>`;
+    contenedor.appendChild(fila);
+}
+
+document.getElementById("btnAddArma").addEventListener("click", () => crearFilaHabilidad("contenedorArmas"));
+document.getElementById("btnAddHabilidad").addEventListener("click", () => crearFilaHabilidad("contenedorHabilidades"));
 
 document.getElementById("btnConfirmarAnadir").addEventListener("click", () => {
-    const nuevoHeroe = {
-        id:          document.getElementById("nuevoId").value.trim(),
-        nombre:      document.getElementById("nuevoNombre").value.trim(),
-        rol:         document.getElementById("nuevoRol").value,
-        descripcion: document.getElementById("nuevoDesc").value.trim(),
-        portada:     "https://placehold.co/300x200?text=" + encodeURIComponent(document.getElementById("nuevoNombre").value),
-        vida:        parseInt(document.getElementById("nuevoVida").value) || 0,
-        habilidades: []
+    const nombre   = document.getElementById("nuevoNombre").value.trim();
+        if (!nombre) {
+            alert("El héroe debe tener al menos un nombre.");
+            return;
+        }
+    const rol      = document.getElementById("nuevoRol").value;
+    const vida     = parseInt(document.getElementById("nuevoVida").value) || 0;
+    const desc     = document.getElementById("nuevoDesc").value.trim();
+    const archivoPortada = document.getElementById("nuevoPortada").files[0];
+    const portada = archivoPortada
+        ? URL.createObjectURL(archivoPortada)
+        : "https://placehold.co/300x200?text=" + encodeURIComponent(nombre);
+
+    // Generar ID automáticamente desde el nombre
+    const id = nombre.toLowerCase().replace(/\s+/g, "_").replace(/[^a-z0-9_]/g, "");
+
+    // Pasiva de rol según el rol elegido
+    const pasivasRol = {
+        tanque: { titulo: "Función: Tanque", icono: "Imagenes/habilidades_comunes/rol_tank.svg", descripcion: "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles." },
+        dps:    { titulo: "Función: Daño",   icono: "Imagenes/habilidades_comunes/rol_dps.svg",  descripcion: "Dañar a un enemigo reduce temporalmente la curación que recibe." },
+        apoyo:  { titulo: "Función: Apoyo",  icono: "Imagenes/habilidades_comunes/rol_supp.svg", descripcion: "Empieza a regenerar salud más rápidamente." }
     };
+
+    const habilidades = [];
+
+    // Añadir pasiva de rol automáticamente
+    const pr = pasivasRol[rol];
+    habilidades.push({ tipo: "pasivaRol", titulo: pr.titulo, icono: pr.icono, descripcion: pr.descripcion });
+
+    // Pasiva propia (si se ha rellenado)
+    const pasivaNombre = document.getElementById("pasivaNombre").value.trim();
+    const pasivaIcono  = document.getElementById("pasivaIcono").value.trim();
+    const pasivaDesc   = document.getElementById("pasivaDesc").value.trim();
+    const pasivaArchivo = document.getElementById("pasivaIcono").files[0];
+    const pasivaIcoUrl  = pasivaArchivo ? URL.createObjectURL(pasivaArchivo) : "";
+    if (pasivaNombre) {
+        habilidades.push({ tipo: "pasivaPropia", titulo: pasivaNombre, icono: pasivaIcoUrl, descripcion: pasivaDesc });
+    }
+
+    // Armas
+    const filasArmas = document.getElementById("contenedorArmas").querySelectorAll(".row");
+    for (let i = 0; i < filasArmas.length; i++) {
+        const nom    = filasArmas[i].querySelector(".campo-nombre").value.trim();
+        const archivo = filasArmas[i].querySelector(".campo-icono").files[0];
+        const ico    = archivo ? URL.createObjectURL(archivo) : "";
+        const des    = filasArmas[i].querySelector(".campo-desc").value.trim();
+        if (nom) {
+            habilidades.push({ tipo: "arma", titulo: nom, icono: ico, descripcion: des });
+        }
+    }
+
+    // Habilidades normales
+    const filasHab = document.getElementById("contenedorHabilidades").querySelectorAll(".row");
+    for (let i = 0; i < filasHab.length; i++) {
+        const nom     = filasHab[i].querySelector(".campo-nombre").value.trim();
+        const archivo = filasHab[i].querySelector(".campo-icono").files[0];
+        const ico     = archivo ? URL.createObjectURL(archivo) : "";
+        const des     = filasHab[i].querySelector(".campo-desc").value.trim();
+        if (nom) {
+            habilidades.push({ tipo: "habilidad", titulo: nom, icono: ico, descripcion: des });
+        }
+    }
+
+    // Definitiva
+    const defNombre = document.getElementById("defNombre").value.trim();
+    const defIcono  = document.getElementById("defIcono").value.trim();
+    const defDesc   = document.getElementById("defDesc").value.trim();
+    const defArchivo = document.getElementById("defIcono").files[0];
+    const defIcoUrl  = defArchivo ? URL.createObjectURL(defArchivo) : "";
+    if (defNombre) {
+        habilidades.push({ tipo: "definitiva", titulo: defNombre, icono: defIcoUrl, descripcion: defDesc });
+    }
+
+    const nuevoHeroe = { id, nombre, rol, descripcion: desc, portada, vida, habilidades };
 
     fetch(API, {
         method: "POST",
