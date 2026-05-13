@@ -18,7 +18,9 @@ header {
     border-bottom: 2px solid #0f3460;
 }
 
-header h1 { color: #e94560; }
+header h1 {
+    color: #e94560;
+}
 
 /* ── TARJETAS ────────────────────────────────────────────── */
 .tarjeta {
@@ -30,9 +32,19 @@ header h1 { color: #e94560; }
     cursor: pointer;
 }
 
-.tarjeta:hover { transform: scale(1.03); }
-.tarjeta img { width: 100%; height: 200px; object-fit: cover; }
-.tarjeta-body { padding: 0.75rem; }
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-body {
+    padding: 0.75rem;
+}
 
 .tarjeta-body h6 {
     color: #e94560;
@@ -42,9 +54,18 @@ header h1 { color: #e94560; }
 }
 
 /* ── BADGES ROL ──────────────────────────────────────────── */
-.badge-tanque { background-color: #4a90d9; }
-.badge-dps    { background-color: #d94a4a; }
-.badge-apoyo  { background-color: #4ad94a; color: #000; }
+.badge-tanque {
+    background-color: #4a90d9;
+}
+
+.badge-dps    {
+    background-color: #d94a4a;
+}
+
+.badge-apoyo  {
+    background-color: #4ad94a;
+    color: #000;
+}
 
 /* ── MODAL ───────────────────────────────────────────────── */
 .modal-content {
@@ -76,7 +97,11 @@ header h1 { color: #e94560; }
 .texto-secundario { color: #aaa; }
 
 /* ── MODO CLARO ──────────────────────────────────────────── */
-body.modo-claro { background-color: #f0f4f8; color: #1a1a2e; }
+
+body.modo-claro {
+    background-color: #f0f4f8;
+    color: #1a1a2e;
+}
 
 body.modo-claro header {
     background-color: #dce8f5;
@@ -97,13 +122,36 @@ body.modo-claro .tarjeta {
 body.modo-claro .tarjeta-body h6 { color: #c0002a; }
 
 /* El modal siempre oscuro — así los iconos y textos siempre se ven bien */
-.modal-content { background-color: #16213e; color: #e0e0e0; }
-.bloque-habilidad { background-color: #0a1628; }
-.bloque-arma { background-color: #0f2030; }
-.bloque-pasiva-propia { background-color: #1a2e0f; }
-.bloque-pasiva-rol { background-color: #0f3460; }
-.bloque-definitiva { background-color: #1a0a2e; border: 1px solid #e94560; }
-.texto-secundario { color: #aaa; }
+
+.modal-content {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+.bloque-habilidad {
+    background-color: #0a1628;
+}
+
+.bloque-arma {
+    background-color: #0f2030;
+}
+
+.bloque-pasiva-propia {
+    background-color: #1a2e0f;
+}
+
+.bloque-pasiva-rol {
+    background-color: #0f3460;
+}
+
+.bloque-definitiva {
+    background-color: #1a0a2e;
+    border: 1px solid #e94560;
+}
+
+.texto-secundario {
+    color: #aaa;
+}
 
 body.modo-claro footer {
     background-color: #dce8f5;
@@ -111,5 +159,10 @@ body.modo-claro footer {
     color: #555;
 }
 
-body.modo-claro footer a { color: #1a5fa8; }
-body.modo-claro footer strong { color: #1a1a2e; }
+body.modo-claro footer a {
+    color: #1a5fa8;
+}
+
+body.modo-claro footer strong {
+    color: #1a1a2e;
+}

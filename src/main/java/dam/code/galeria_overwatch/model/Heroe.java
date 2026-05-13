@@ -1,33 +1,30 @@
 package dam.code.galeria_overwatch.model;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Heroe {
 
+    @Id
     private String id;
     private String nombre;
     private String rol;
+
+    @Column(length = 1000)
     private String descripcion;
+
     private String portada;
     private int vida;
+
+    @OneToMany(mappedBy = "heroe", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Habilidad> habilidades;
-
-    public Heroe(String id, String nombre, String rol, String descripcion, String portada, int vida, List<Habilidad> habilidades) {
-        this.id = id;
-        this.nombre = nombre;
-        this.rol = rol;
-        this.descripcion = descripcion;
-        this.portada = portada;
-        this.vida = vida;
-        this.habilidades = habilidades;
-    }
-
-    public String getId() { return id; }
-    public String getNombre() { return nombre; }
-    public String getRol() { return rol; }
-    public String getDescripcion() { return descripcion; }
-    public String getPortada() { return portada; }
-    public int getVida() { return vida; }
-    public List<Habilidad> getHabilidades() { return habilidades; }
 
 }

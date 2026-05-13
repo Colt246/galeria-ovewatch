@@ -124,7 +124,7 @@ function abrirDetalle(h) {
     // Definitiva(s)
     const contenedorDef = document.getElementById("modalDefinitiva");
     if (definitivas.length > 0) {
-        contenedorDef.innerHTML = `<p class="mb-1 fw-bold small" style="color:#e94560;">⚡ Habilidad Definitiva</p>`;
+        contenedorDef.innerHTML = `<p class="mb-1 fw-bold small" style="color:#e94560;">Habilidad Definitiva</p>`;
         definitivas.forEach(def => {
             const div = document.createElement("div");
             div.className = "d-flex align-items-start gap-2 mb-1";
