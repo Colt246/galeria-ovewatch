@@ -3,6 +3,13 @@ body {
     background-color: #1a1a2e;
     color: #e0e0e0;
     transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {

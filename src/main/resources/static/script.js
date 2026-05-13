@@ -66,7 +66,7 @@ function abrirDetalle(h) {
 
     const armas         = h.habilidades.filter(hb => hb.tipo === "arma");
     const pasivaRol     = h.habilidades.find(hb => hb.tipo === "pasivaRol");
-    const pasivaPropia  = h.habilidades.find(hb => hb.tipo === "pasivaPropia");
+    const pasivaPropias = h.habilidades.filter(hb => hb.tipo === "pasivaPropia");
     const habilidades   = h.habilidades.filter(hb => hb.tipo === "habilidad");
     const definitivas   = h.habilidades.filter(hb => hb.tipo === "definitiva");
 
@@ -86,7 +86,9 @@ function abrirDetalle(h) {
     // Fila superior: armas + pasiva propia
     const filaSuperior = document.getElementById("modalFilaSuperior");
     const itemsSuperior = [...armas];
-    if (pasivaPropia) itemsSuperior.push({ ...pasivaPropia, esPropia: true });
+    for (let i = 0; i < pasivaPropias.length; i++) {
+        itemsSuperior.push({ ...pasivaPropias[i], esPropia: true });
+    }
 
     itemsSuperior.forEach(item => {
         const col = document.createElement("div");
