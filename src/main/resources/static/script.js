@@ -87,7 +87,9 @@ function abrirDetalle(h) {
     const filaSuperior = document.getElementById("modalFilaSuperior");
     const itemsSuperior = [...armas];
     for (let i = 0; i < pasivaPropias.length; i++) {
-        itemsSuperior.push({ ...pasivaPropias[i], esPropia: true });
+        const item = pasivaPropias[i];
+        item.esPropia = true;
+        itemsSuperior.push(item);
     }
 
     itemsSuperior.forEach(item => {
@@ -212,7 +214,7 @@ document.getElementById("btnConfirmarAnadir").addEventListener("click", () => {
         : "https://placehold.co/300x200?text=" + encodeURIComponent(nombre);
 
     // Generar ID automáticamente desde el nombre
-    const id = nombre.toLowerCase().replace(/\s+/g, "_").replace(/[^a-z0-9_]/g, "");
+    const id = nombre.toLowerCase().split(" ").join("_");
 
     // Pasiva de rol según el rol elegido
     const pasivasRol = {
