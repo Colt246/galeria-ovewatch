@@ -403,7 +403,7 @@ public class HeroeController {
         habVenture.add(new Habilidad("pasivaPropia", "Determinación exploradora",   "Imagenes/Venture/determinacion.png",            "El uso de habilidades confiere escudos temporales."));
         habVenture.add(new Habilidad("arma",         "Excavación inteligente",      "Imagenes/Venture/arma_venture.png",             "Lanza una carga sísmica que explota a poca distancia."));
         habVenture.add(new Habilidad("habilidad",    "Enterrarse",                  "Imagenes/Venture/burrow.png",                   "Te entierras y te vuelves invulnerable. Pulsa o mantén para emerger e infligir daño a los enemigos."));
-        habVenture.add(new Habilidad("habilidad", "Perforación",                    "Imagenes/Venture/drill_dash.png",               "Te lanzas hacia delante tanto si estás bajo tierra como en la superficie, lo que hace retroceder a los enemigos. El tiempo de reutilización se recarga más rápido mientras Enterrarse esté activa."));
+        habVenture.add(new Habilidad("habilidad",    "Perforación",                 "Imagenes/Venture/drill_dash.png",               "Te lanzas hacia delante tanto si estás bajo tierra como en la superficie, lo que hace retroceder a los enemigos. El tiempo de reutilización se recarga más rápido mientras Enterrarse esté activa."));
         habVenture.add(new Habilidad("definitiva",   "Impacto tectónico",           "Imagenes/Venture/tectonic_shock.png",           "Lanza ondas de choque dañinas."));
         service.guardar(new Heroe("venture", "Venture", "dps", "Arqueólogo y explorador trotamundos, Venture siente pasión por resolver los misterios de la historia.", "Imagenes/Venture/portada_venture.png", 250, habVenture));
 
