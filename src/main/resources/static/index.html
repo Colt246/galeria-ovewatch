@@ -28,7 +28,7 @@
             <option value="az">A → Z</option>
             <option value="za">Z → A</option>
         </select>
-        <button id="btnAnadir" class="btn btn-success btn-sm">➕ Añadir héroe</button>
+        <button id="btnAnadir" class="btn btn-anadir btn-sm"><span class="signo-mas">+</span> Añadir héroe</button>
     </div>
 </header>
 
@@ -156,6 +156,30 @@
                 </div>
 
                 <button id="btnConfirmarAnadir" class="btn btn-success w-100">Añadir héroe</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal editar héroe -->
+<div class="modal fade" id="modalEditar" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Editar héroe</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="editarId">
+                <input type="text" id="editarNombre" class="form-control mb-2" placeholder="Nombre">
+                <select id="editarRol" class="form-select mb-2">
+                    <option value="tanque">Tanque</option>
+                    <option value="dps">DPS</option>
+                    <option value="apoyo">Apoyo</option>
+                </select>
+                <input type="number" id="editarVida" class="form-control mb-2" placeholder="Vida">
+                <textarea id="editarDesc" class="form-control mb-3" placeholder="Descripción"></textarea>
+                <button id="btnConfirmarEditar" class="btn btn-success w-100">Guardar cambios</button>
             </div>
         </div>
     </div>

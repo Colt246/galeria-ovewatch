@@ -24,7 +24,7 @@ public class HeroeController {
 
         // ── D.Va ──────────────────────────────────────────────────────────
         List<Habilidad> habDva = new ArrayList<>();
-        habDva.add(new Habilidad("pasivaRol",     "Función: Tanque",    "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habDva.add(new Habilidad("pasivaRol",     "Función: Tanque",    "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habDva.add(new Habilidad("pasivaPropia",  "¡Eyección!",         "Imagenes/D.va/eyeccion.png",                 "Eyecta fuera del MECA cuando es destruido."));
         habDva.add(new Habilidad("arma",          "Cañones de fusión",  "Imagenes/D.va/cañon_fusion.png",             "Armas automáticas de corto alcance y dispersión."));
         habDva.add(new Habilidad("arma",          "Pistola de luz",     "Imagenes/D.va/pistola_luz.png",              "Arma automática."));
@@ -37,7 +37,7 @@ public class HeroeController {
 
         // ── Domina ──────────────────────────────────────────────────────
         List<Habilidad> habDomina= new ArrayList<>();
-        habDomina.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",   "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habDomina.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",   "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habDomina.add(new Habilidad("pasivaPropia", "Reconstrucción",        "Imagenes/Domina/pasiva_domina.png",           "Inflingir daño con habilidades restaura escudos."));
         habDomina.add(new Habilidad("arma",         "Cañón de fotones",      "Imagenes/Domina/photon_magnum.png",           "Haz de alcance medio que culmina con un disparo de alto impacto."));
         habDomina.add(new Habilidad("habilidad",    "Matriz barrera",        "Imagenes/Domina/barrier_array.png",           "Construye una barrera segmentada."));
@@ -48,7 +48,7 @@ public class HeroeController {
 
         // ── Doomfist ──────────────────────────────────────────────────────
         List<Habilidad> habDoom = new ArrayList<>();
-        habDoom.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habDoom.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habDoom.add(new Habilidad("pasivaPropia", "La mejor defensa...", "Imagenes/Doomfist/pasiva_doom.png",         "Inflingir daño con habilidades crea un exceso de salud temporal."));
         habDoom.add(new Habilidad("arma",         "Cañón de mano",       "Imagenes/Doomfist/cañon_mano.png",          "Arma de corto alcance con dispersión. Se recarga automáticamente."));
         habDoom.add(new Habilidad("habilidad",    "Puño cohete",         "Imagenes/Doomfist/punch.png",               "Mantén pulsado para cargar y suelta para lanzarte hacia delante y derribar al enemigo. El daño aumenta si el enemigo choca contra una pared."));
@@ -59,7 +59,7 @@ public class HeroeController {
 
         // ── Hazard ────────────────────────────────────────────────────────
         List<Habilidad> habHazard = new ArrayList<>();
-        habHazard.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habHazard.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habHazard.add(new Habilidad("pasivaPropia", "Brinco",              "Imagenes/Hazard/brinco.png",                "Escala paredes cortas y se agarra a cornisas."));
         habHazard.add(new Habilidad("arma",         "Lanzaespinas",        "Imagenes/Hazard/arma_hazard.png",           "Dispara una ráfaga de púas."));
         habHazard.add(new Habilidad("habilidad",    "Protección de púas",  "Imagenes/Hazard/proteccion_puas.png",       "Protégete del daño frontal. Dispara púas teledirigidas a los enemigos cercanos y regenera munición."));
@@ -70,7 +70,7 @@ public class HeroeController {
 
         // ── Junker Queen ──────────────────────────────────────────────────
         List<Habilidad> habQueen = new ArrayList<>();
-        habQueen.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habQueen.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habQueen.add(new Habilidad("pasivaPropia", "Subida de adrenalina",  "Imagenes/Junker_Queen/pasiva_queen.png",     "Secura todo el daño a lo largo del tiempo unflingido por las heridas."));
         habQueen.add(new Habilidad("arma",         "Escopeta",              "Imagenes/Junker_Queen/escopeta_queen.png",   "Escopeta de corredera."));
         habQueen.add(new Habilidad("habilidad",    "Grito de Mando",        "Imagenes/Junker_Queen/grito_mando.png",      "Otorga salud temporal y velocidad de movimiento a ti y a tus aliados."));
@@ -80,7 +80,7 @@ public class HeroeController {
 
         // ── Mauga ─────────────────────────────────────────────────────────
         List<Habilidad> habMauga = new ArrayList<>();
-        habMauga.add(new Habilidad("pasivaRol",    "Función: Tanque",              "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habMauga.add(new Habilidad("pasivaRol",    "Función: Tanque",              "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
         habMauga.add(new Habilidad("pasivaPropia", "Berserker",                    "Imagenes/Mauga/pasiva_mauga.png",            "Obtienes salud temporal al inflingir daño crítico."));
         habMauga.add(new Habilidad("arma",         "Cañón de cadena incendiario",  "Imagenes/Mauga/arma_mauga_fuego.png",        "Arma automática que enciende a los enemigos con impactos repetidos."));
         habMauga.add(new Habilidad("arma",         "Cañón de cadena volátil",      "Imagenes/Mauga/arma_mauga_critico.png",      "Arma automática que inflige daño crítico a los enemigos en llamas."));
@@ -88,6 +88,90 @@ public class HeroeController {
         habMauga.add(new Habilidad("habilidad",    "Sobreestimulación cardíaca",   "Imagenes/Mauga/cardiac.png",                 "Otorga reducción de daño y los aliados cercanos se sanan al inflingir daño."));
         habMauga.add(new Habilidad("definitiva",   "Mano a mano",                  "Imagenes/Mauga/cage.png",                    "Despliegas una barrera que os encierra a ti y a los enemigos."));
         service.guardar(new Heroe("mauga", "Mauga", "tanque", "Mauga, guerrero samoano carismático y astuto como pocos, se abre paso entre el caos del campo de batalla y vive cada día como si fuera el último.", "Imagenes/Mauga/portada_mauga.png", 725, habMauga));
+
+        // ── Orisa ───────────────────────────────────────────────────────────
+        List<Habilidad> habOrisa = new ArrayList<>();
+        habOrisa.add(new Habilidad("pasivaRol",      "Función: Tanque",                     "Imagenes/habilidades_comunes/rol_tank.svg",    "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habOrisa.add(new Habilidad("arma",           "Ametralladora de fusión aumentada",   "Imagenes/Orisa/arma_orisa.png",                "Arma térmica automática."));
+        habOrisa.add(new Habilidad("habilidad",      "Jabalina de energía",                 "Imagenes/Orisa/javelin.png",                   "Lanzas la jabalina a un enemigo para aturdirlo y repelerlo. La efectividad aumenta si el enemigo choca contra una pared."));
+        habOrisa.add(new Habilidad("habilidad",      "Fortificación",                       "Imagenes/Orisa/fortify.png",                   "Obtienes salud de duración limitada, reduces todo el daño recibido y te vuelves imparable."));
+        habOrisa.add(new Habilidad("habilidad",      "Girojabalina",                        "Imagenes/Orisa/spin.png",                      "Giras la jabalina para destruir proyectiles y bloquear ataques cuerpo a cuerpo, y también para empujar a los enemigos y aumentar la velocidad de movimiento hacia delante."));
+        habOrisa.add(new Habilidad("definitiva",     "Terraavulsión",                       "Imagenes/Orisa/terra.png",                     "Atraes a los enemigos, te quedas quieta y obtienes los efectos de Fortificación mientras cargas un aluvión de daño. Usa el click izquierdo para liberarlo antes de tiempo."));
+        service.guardar(new Heroe("orisa", "Orisa", "tanque", "Construida a partir de piezas de uno de los robots de defensa OR15 de Numbani, que tuvo una vida útil corta, Orisa es la nueva protectora de la ciudad, aunque todavía tiene mucho que aprender.", "Imagenes/Orisa/portada_orisa.png", 600, habOrisa));
+
+        // ── Ramattra ──────────────────────────────────────────────────────
+        List<Habilidad> habRam = new ArrayList<>();
+        habRam.add(new Habilidad("pasivaRol",    "Función: Tanque",                         "Imagenes/habilidades_comunes/rol_tank.svg",     "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habRam.add(new Habilidad("arma",         "Acelerador de vacío (Forma de Ómnico)",   "Imagenes/Ramattra/arma_ram.png",                "Lanza una andanada de proyectiles."));
+        habRam.add(new Habilidad("arma",         "Aporrear (Forma de Némesis)",             "Imagenes/Ramattra/punch.png",                   "Lanzas un puñetazo, lo que genera una oleada de energía perforadora con cada golpe."));
+        habRam.add(new Habilidad("habilidad",    "Barrera de vacío (Forma de Ómnico)",      "Imagenes/Ramattra/barrier.png",                 "Crea una barrera en la ubicación seleccionada."));
+        habRam.add(new Habilidad("habilidad",    "Forma de Némesis",                        "Imagenes/Ramattra/nemesis.png",                 "Adoptas la Forma de Némesis, lo que cambia tus ataques y te otorga una bonificación de armadura."));
+        habRam.add(new Habilidad("habilidad",    "Bloquear (Forma de Némesis)",             "Imagenes/Ramattra/bloqueo.png",                 "Reduce en gran medida el daño recibido de frente y reduce la velocidad de movimiento."));
+        habRam.add(new Habilidad("habilidad",    "Vórtice voraz",                           "Imagenes/Ramattra/vortex.png",                  "Lanzas una esfera de energía que detona en el suelo que ralentiza y derriba a los enemigos. Actívalo de nuevo para detonarla antes."));
+        habRam.add(new Habilidad("definitiva",   "Aniquilación",                            "Imagenes/Ramattra/annihilation.png",            "Adoptas la forma de némesis y creas un enjambre letal que se abalanza sobre los enemigos cercanos y que dura más cuando inflinge daño a los enemigos."));
+        service.guardar(new Heroe("ramattra", "Ramattra", "tanque", "El brutal líder de Null Sector no se detendrá ante nada para ver hecha realidad su visión del mundo.", "Imagenes/Ramattra/portada_ram.png", 525, habRam));
+
+        // ── Reinhardt ───────────────────────────────────────────────────────
+        List<Habilidad> habRein = new ArrayList<>();
+        habRein.add(new Habilidad("pasivaRol",      "Función: Tanque",      "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habRein.add(new Habilidad("arma",           "Martillo a reacción",  "Imagenes/Reinhardt/hammer.png",             "Arma cuerpo a cuerpo devastadora."));
+        habRein.add(new Habilidad("habilidad",      "Embestida",            "Imagenes/Reinhardt/charge.png",             "Cargas hacia delante y empotras a un enemigo contra la pared."));
+        habRein.add(new Habilidad("habilidad",      "Onda de fuego",        "Imagenes/Reinhardt/fire_strike.png",        "Lanzas un proyectil de fuego."));
+        habRein.add(new Habilidad("habilidad",      "Campo protector",      "Imagenes/Reinhardt/barrier.png",            "Mantén pulsado para activar una barrera de energía frontal."));
+        habRein.add(new Habilidad("definitiva",     "Seísmo",               "Imagenes/Reinhardt/shatter.png",            "Derribas a todos los enemigos frente a ti."));
+        service.guardar(new Heroe("reinhardt", "Reinhardt", "tanque", "Reinhardt Wilhelm se presenta a sí mismo como un campeón de una época pasada, que vive según los códigos caballerescos de valor, justicia y coraje.", "Imagenes/Reinhardt/portada_rein.png", 700, habRein));
+
+        // ── Roadhog ─────────────────────────────────────────────────────────
+        List<Habilidad> habHog = new ArrayList<>();
+        habHog.add(new Habilidad("pasivaRol",      "Función: Tanque",      "Imagenes/habilidades_comunes/rol_tank.svg",    "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habHog.add(new Habilidad("arma",           "Chatarrera",           "Imagenes/Roadhog/scrap_gun.png",               "Arma de disparo esparcido de corto alcance."));
+        habHog.add(new Habilidad("arma",           "Disparo secundario",   "Imagenes/Roadhog/disparo_secundario.png",      "Proyectil de alcance medio/alto que explota y se divide en el disparo principal de corto alcance del arma."));
+        habHog.add(new Habilidad("habilidad",      "Garfio",               "Imagenes/Roadhog/hook.png",                    "Arrastras a un enemigo hacia ti."));
+        habHog.add(new Habilidad("habilidad",      "Inhalador",            "Imagenes/Roadhog/breather.png",                "Te curas y reduces el daño que recibes."));
+        habHog.add(new Habilidad("definitiva",     "Juego sucio",          "Imagenes/Roadhog/whole_hog.png",               "Dañas y repeles a todos los enemigos frente a ti."));
+        service.guardar(new Heroe("roadhog", "Roadhog", "tanque", "Roadhog es un poderoso ejecutor con una merecida reputación de destrucción aleatoria y sin sentido.", "Imagenes/Roadhog/portada_hog.png", 750, habHog));
+
+        // ── Sigma ───────────────────────────────────────────────────────────
+        List<Habilidad> habSigma = new ArrayList<>();
+        habSigma.add(new Habilidad("pasivaRol",      "Función: Tanque",      "Imagenes/habilidades_comunes/rol_tank.svg",   "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habSigma.add(new Habilidad("arma",           "Hiperesferas",         "Imagenes/Sigma/hyperspheres.png",             "Lanzas dos cargas que implosionan tras un corto periodo de tiempo, lo que infligen daño en un área."));
+        habSigma.add(new Habilidad("habilidad",      "Agarre cinético",      "Imagenes/Sigma/kinetic_grasp.png",            "Absorbes proyectiles frente a ti y los conviertes en salud adicional."));
+        habSigma.add(new Habilidad("habilidad",      "Acreción",             "Imagenes/Sigma/rock.png",                     "Reúnes una masa de escombros, la lanzas contra un enemigo y lo derribas."));
+        habSigma.add(new Habilidad("habilidad",      "Barrera experimental", "Imagenes/Sigma/barrier.png",                  "Mantén pulsado para proyectar una barrera flotante; suéltalo para pararla. Pulsa de nuevo para hacer que la barrera vuelva a ti."));
+        habSigma.add(new Habilidad("definitiva",     "Flujo gravitacional",  "Imagenes/Sigma/flux.png",                     "Manipula la gravedad para alzar a los enemigos en el aire y luego estrellarlos contra el suelo."));
+        service.guardar(new Heroe("sigma", "Sigma", "tanque", "La vida del brillante astrofísico Dr. Siebren de Kuiper cambió para siempre cuando un experimento fallido le otorgó la capacidad de controlar la gravedad; ahora, Talon lo manipula para sus propios fines.", "Imagenes/Sigma/portada_sigma.png", 625, habSigma));
+
+        // ── Winston ───────────────────────────────────────────────────────
+        List<Habilidad> habWinston = new ArrayList<>();
+        habWinston.add(new Habilidad("pasivaRol",    "Función: Tanque",      "Imagenes/habilidades_comunes/rol_tank.svg",    "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habWinston.add(new Habilidad("arma",         "Cañón Tesla",          "Imagenes/Winston/tesla.png",                   "Arma que dispara electricidad en un cono frontal."));
+        habWinston.add(new Habilidad("arma",         "Disparo secundario",   "Imagenes/Winston/disparo_secundario.png",      "Mantén pulsado para cargar y suéltalo para disparar electricidad concentrada."));
+        habWinston.add(new Habilidad("habilidad",    "Salto potenciado",     "Imagenes/Winston/jump.png",                    "Saltas por el aire. Si aterrizas sobre un enemigo, le infliges daño."));
+        habWinston.add(new Habilidad("habilidad",    "Campo de fuerza",      "Imagenes/Winston/bubble.png",                  "Despliegas una cúpula de energía protectora."));
+        habWinston.add(new Habilidad("definitiva",   "Rabia primigenia",     "Imagenes/Winston/primal.png",                  "Obtienes gran cantidad de salud, pero solo puedes saltar y dar puñetazos."));
+        service.guardar(new Heroe("winston", "Winston", "tanque", "Winston es un gorila superinteligente, modificado genéticamente, un científico brillante y un defensor del potencial de la humanidad.", "Imagenes/Winston/portada_winston.png", 625, habWinston));
+
+        // ── Wrecking Ball ─────────────────────────────────────────────────
+        List<Habilidad> habBall = new ArrayList<>();
+        habBall.add(new Habilidad("pasivaRol",    "Función: Tanque",      "Imagenes/habilidades_comunes/rol_tank.svg",    "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habBall.add(new Habilidad("arma",         "Cañones cuádruples",   "Imagenes/Wrecking_Ball/arma_ball.png",         "Armas de asalto automáticas."));
+        habBall.add(new Habilidad("habilidad",    "Gancho garra",         "Imagenes/Wrecking_Ball/claw.png",              "Lanzas un gancho que te permite desplazarte rápidamente por la zona. También hace que dañes a un enemigo y que lo repelas cuando chocas contra él a gran velocidad."));
+        habBall.add(new Habilidad("habilidad",    "Bola arrolladora",     "Imagenes/Wrecking_Ball/roll.png",              "Te transformas en una bola, lo que aumenta tu velocidad de movimiento máxima."));
+        habBall.add(new Habilidad("habilidad",    "Impacto demoledor",    "Imagenes/Wrecking_Ball/slam.png",              "Te lanzas al suelo en picado, infliges daño a los enemigos y los haces saltar por los aires."));
+        habBall.add(new Habilidad("habilidad",    "Escudo adaptable",     "Imagenes/Wrecking_Ball/shield.png",            "Crea salud adicional de duración limitada que aumenta cuantos más enemigos tengas cerca. Puedes transferir parte de esa salud a tus aliados."));
+        habBall.add(new Habilidad("definitiva",   "Campo de minas",       "Imagenes/Wrecking_Ball/minefield.png",         "Despliegas un gran campo de minas de proximidad."));
+        service.guardar(new Heroe("wreckingBall", "Wrecking Ball", "tanque", "Wrecking Ball, un mecánico y luchador ingenioso y sumamente inteligente, surgió de los laboratorios de la Colonia Lunar Horizon para convertirse en el campeón de la Reina Chatarra.", "Imagenes/Wrecking_Ball/portada_ball.png", 725, habBall));
+
+        // ── Zarya ─────────────────────────────────────────────────────────
+        List<Habilidad> habZarya = new ArrayList<>();
+        habZarya.add(new Habilidad("pasivaRol",    "Función: Tanque",          "Imagenes/habilidades_comunes/rol_tank.svg",   "Reduce los retrocesos y el dañocrítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
+        habZarya.add(new Habilidad("pasivaPropia", "Energía",                  "Imagenes/Zarya/energy.png",                   "El daño que bloquean las barreras aumenta el daño del cañón de partículas."));
+        habZarya.add(new Habilidad("arma",         "Cañón de partículas",      "Imagenes/Zarya/particle_cannon.png",          "Arma que dispara un haz lineal de corto alcance."));
+        habZarya.add(new Habilidad("arma",         "Disparo secundario",       "Imagenes/Zarya/disparo_secundario.png",       "Lanzas granadas de energía."));
+        habZarya.add(new Habilidad("habilidad",    "Barrera de partículas",    "Imagenes/Zarya/personal_bubble.png",          "Crea una barrera de daño a tu alrededor."));
+        habZarya.add(new Habilidad("habilidad",    "Barrera proyectada",       "Imagenes/Zarya/ally_bubble.png",              "Crea una barrera de daño alrededor de un aliado."));
+        habZarya.add(new Habilidad("definitiva",   "Bomba de gravedad",        "Imagenes/Zarya/grav.png",                     "Lanza un pozo de gravedad que atrae a los enemigos."));
+        service.guardar(new Heroe("zarya", "Zarya", "tanque", "Aleksandra Zaryanova es una de las mujeres más fuertes del mundo, una atleta célebre que sacrificó la gloria personal para proteger a su familia, amigos y país en tiempos de guerra.", "Imagenes/Zarya/portada_zarya.png", 550, habZarya));
 
         // ── Anran ──────────────────────────────────────────────────────────
         List<Habilidad> habAnran = new ArrayList<>();
@@ -207,6 +291,132 @@ public class HeroeController {
         habMei.add(new Habilidad("definitiva",  "Ventisca",               "Imagenes/Mei/blizzard.png",                 "Lanzas un dron de control climático que congela a los enemigos en una gran área."));
         service.guardar(new Heroe("mei", "Mei", "dps", "Mei es una científica que ha tomado en sus propias manos la lucha por preservar el medio ambiente.", "Imagenes/Mei/portada_mei.png", 300, habMei));
 
+        // ── Pharah ──────────────────────────────────────────────────────────
+        List<Habilidad> habPharah = new ArrayList<>();
+        habPharah.add(new Habilidad("pasivaRol",      "Función: Daño",        "Imagenes/habilidades_comunes/rol_dps.svg",    "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habPharah.add(new Habilidad("pasivaPropia",   "Planeador",            "Imagenes/Pharah/pasiva_pharah.png",           "Mantén pulsado para planear. Caes despacio cuando el combustible se termina. El combustible solo se regenera mientras se está en el suelo."));
+        habPharah.add(new Habilidad("arma",           "Lanzacohetes",         "Imagenes/Pharah/rocket_launcher.png",         "Arma de proyectiles explosivos de largo alcance."));
+        habPharah.add(new Habilidad("habilidad",      "Propulsores",          "Imagenes/Pharah/jump_jet.png",                "Asciendes rápidamente y recuperas un poco de combustible."));
+        habPharah.add(new Habilidad("habilidad",      "Disparo de conmoción", "Imagenes/Pharah/concussive_blast.png",        "Lanzas un cohete explosivo que repele a los enemigos."));
+        habPharah.add(new Habilidad("habilidad",      "Impulso",              "Imagenes/Pharah/jet_dash.png",                "Te impulsas horizontalmente."));
+        habPharah.add(new Habilidad("definitiva",     "Bombardeo",            "Imagenes/Pharah/barrage.png",                 "Lanzas una salva continua de minicohetes."));
+        service.guardar(new Heroe("pharah", "Pharah", "dps", "El compromiso con el deber de Fareeha Amari lo lleva en la sangre. Proviene de una larga estirpe de soldados condecorados y arde en deseos de servir con honor.", "Imagenes/Pharah/portada_pharah.png", 225, habPharah));
+
+        // ── Reaper ──────────────────────────────────────────────────────────
+        List<Habilidad> habReaper = new ArrayList<>();
+        habReaper.add(new Habilidad("pasivaRol",      "Función: Daño",        "Imagenes/habilidades_comunes/rol_dps.svg",    "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habReaper.add(new Habilidad("pasivaPropia",   "Siega",                "Imagenes/Reaper/pasiva_reaper.png",           "Infligir daño te sana."));
+        habReaper.add(new Habilidad("arma",           "Escopetas infernales", "Imagenes/Reaper/shotguns.png",                "Armas de corto alcance y disparo esparcido."));
+        habReaper.add(new Habilidad("habilidad",      "Paso de las tinieblas","Imagenes/Reaper/tp.png",                      "Te teletransportas a la ubicación seleccionada."));
+        habReaper.add(new Habilidad("habilidad",      "Forma espectral",      "Imagenes/Reaper/fade.png",                    "Aceleras tu movimiento y te vuelves invulnerable, pero no puedes disaparar."));
+        habReaper.add(new Habilidad("habilidad",      "Gatillos calamitosos", "Imagenes/Reaper/double_shot.png",             "Dispara una descarga de precisión de largo alcance con ambas Escopetas infernales."));
+        habReaper.add(new Habilidad("definitiva",     "Espiral de muerte",    "Imagenes/Reaper/blossom.png",                 "Dañas a todos los enemigos cercanos."));
+        service.guardar(new Heroe("reaper", "Reaper", "dps", "Algunos hablan de un terrorista vestido de negro conocido solo como el Segador. Su identidad y sus motivos son un misterio. Lo que sí se sabe es que dondequiera que aparece, la muerte le sigue.", "Imagenes/Reaper/portada_reaper.png", 300, habReaper));
+
+        // ── Sierra ──────────────────────────────────────────────────────────
+        List<Habilidad> habSierra = new ArrayList<>();
+        habSierra.add(new Habilidad("pasivaRol",      "Función: Daño",      "Imagenes/habilidades_comunes/rol_dps.svg",    "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habSierra.add(new Habilidad("arma",           "Rifle hélice",       "Imagenes/Sierra/arma_sierra.png",             "Arma de asalto automática. Dispara en forma de hélice, obteniendo precisión con fuego sostenido."));
+        habSierra.add(new Habilidad("habilidad",      "Disparo rastreador", "Imagenes/Sierra/tracking_shot.png",           "Marca a un enemigo. Los disparos del rifle hélice rastrean automáticamente a los enemigos marcados."));
+        habSierra.add(new Habilidad("habilidad",      "Dron de anclaje",    "Imagenes/Sierra/dron.png",                    "Lanzas un dron de anclaje. Reactívalo para lanzarte hacia él."));
+        habSierra.add(new Habilidad("habilidad",      "Carga sísmica",      "Imagenes/Sierra/granade.png",                 "Lanzas una carga que crea una onda de choque al impactar."));
+        habSierra.add(new Habilidad("definitiva",     "Abrecaiminos",       "Imagenes/Sierra/trailblazer.png",             "Despliegas un dron que vuela hacia delante y lanza explosivos."));
+        service.guardar(new Heroe("sierra", "Sierra", "dps", "Sierra, una compañera de equipo dedicada con habilidades especiales, ha ascendido rápidamente en las filas de Helix Security. Con su actitud positiva, no hay desafío que no pueda superar.", "Imagenes/Sierra/portada_sierra.png", 250, habSierra));
+
+        // ── Sojourn ─────────────────────────────────────────────────────────
+        List<Habilidad> habSojourn = new ArrayList<>();
+        habSojourn.add(new Habilidad("pasivaRol",      "Función: Daño",           "Imagenes/habilidades_comunes/rol_dps.svg",     "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habSojourn.add(new Habilidad("arma",           "Cañón de riel",           "Imagenes/Sojourn/railgun.png",                 "Proyectiles de gran velocidad que generan energía al impactar."));
+        habSojourn.add(new Habilidad("arma",           "Disparo cargado",         "Imagenes/Sojourn/disparo_cargado.png",         "Disparo de potencia elevada que gasta la energía acumulada y atraviesa a los enemigos."));
+        habSojourn.add(new Habilidad("habilidad",      "Maniobra evasiva",        "Imagenes/Sojourn/slide.png",                   "Desplazamiento por el suelo que puede convertirse en un salto elevado."));
+        habSojourn.add(new Habilidad("habilidad",      "Disparo inmovilizador",   "Imagenes/Sojourn/disruptor.png",               "Lanzas una ráfaga de energía que inflige daño a los enemigos que se encuentren en su interior."));
+        habSojourn.add(new Habilidad("definitiva",     "Supercarga",              "Imagenes/Sojourn/overclock.png",               "La energía del cañón de riel se carga automáticamente durante un breve periodo."));
+        service.guardar(new Heroe("sojourn", "Sojourn", "dps", "Como líder en los tiempos pasados de Overwatch, Vivian Chase, cuyo nombre en clave es Sojourn, está decidida a garantizar que sus nuevos héroes no repitan los errores del pasado.", "Imagenes/Sojourn/portada_soj.png", 225, habSojourn));
+
+        // ── Soldado: 76 ─────────────────────────────────────────────────────
+        List<Habilidad> habSoldado76 = new ArrayList<>();
+        habSoldado76.add(new Habilidad("pasivaRol",      "Función: Daño",            "Imagenes/habilidades_comunes/rol_dps.svg",   "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habSoldado76.add(new Habilidad("arma",           "Rifle de pulsos pesado",   "Imagenes/Soldado76/arma_soldier.png",        "Arma de asalto automática."));
+        habSoldado76.add(new Habilidad("habilidad",      "Sprint",                   "Imagenes/Soldado76/sprint.png",              "Corres más rápido hacia delante."));
+        habSoldado76.add(new Habilidad("habilidad",      "Campo biótico",            "Imagenes/Soldado76/biotic_field.png",        "Despliegas un campo que sana a tus aliados y a ti."));
+        habSoldado76.add(new Habilidad("habilidad",      "Cohetes Hélice",           "Imagenes/Soldado76/helix.png",               "Lanzas una salva de cohetes explosivos."));
+        habSoldado76.add(new Habilidad("definitiva",     "Visor táctico",            "Imagenes/Soldado76/visor.png",               "Apuntas tu arma automáticamente a los objetivos visibles."));
+        service.guardar(new Heroe("soldado76", "Soldado: 76", "dps", "Perseguido por una operación internacional, el justiciero conocido como Soldado: 76 libra una guerra personal para revelar la verdad detrás del colapso de Overwatch.", "Imagenes/Soldado76/portada_soldier.png", 250, habSoldado76));
+
+        // ── Sombra ──────────────────────────────────────────────────────────
+        List<Habilidad> habSombra = new ArrayList<>();
+        habSombra.add(new Habilidad("pasivaRol",      "Función: Daño",              "Imagenes/habilidades_comunes/rol_dps.svg",     "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habSombra.add(new Habilidad("pasivaPropia",   "Oportunista",                "Imagenes/Sombra/pasiva_sombra.png",            "Puedes ver cuándo los héroes enemigos tienen la habilidad definitiva disponible e infliges más daño a los enemigos hackeados."));
+        habSombra.add(new Habilidad("arma",           "Subfusil",                   "Imagenes/Sombra/arma_sombra.png",              "Arma automática de corto alcance."));
+        habSombra.add(new Habilidad("habilidad",      "Hackeo",                     "Imagenes/Sombra/hack.png",                     "Mantén pulsado para hackear. Los enemigos hackeados no pueden usar habilidades y se ven a través de las paredes. Los packs de salud hackeados reaparecen más rápido y los enemigos no pueden usarlos. Sufrir daños interrumpe el hackeo."));
+        habSombra.add(new Habilidad("habilidad",      "Virus",                      "Imagenes/Sombra/virus.png",                    "Infectas a los enemigos con un proyectil que inflige daño en el tiempo. El virus daña más rápido a los enemigos hackeados."));
+        habSombra.add(new Habilidad("habilidad",      "Baliza de translocación",    "Imagenes/Sombra/tp.png",                       "Lanzas una baliza y te teletransportas hasta ella. Tras teletransportarte, entras en sigilo durante un breve periodo de tiempo."));
+        habSombra.add(new Habilidad("definitiva",     "PEM",                        "Imagenes/Sombra/emp.png",                      "Infliges daño a todos los enemigos cercanos según un porcentaje de su salud actual, los hackeas y destruyes las barreras a tu alrededor."));
+        service.guardar(new Heroe("sombra", "Sombra", "dps", "Sombra, uno de los hackers más notorios del mundo, utiliza la información para manipular a quienes ostentan el poder.", "Imagenes/Sombra/portada_sombra.png", 225, habSombra));
+
+        // ── Symmetra ──────────────────────────────────────────────────────
+        List<Habilidad> habSymmetra = new ArrayList<>();
+        habSymmetra.add(new Habilidad("pasivaRol",    "Función: Daño",          "Imagenes/habilidades_comunes/rol_dps.svg",       "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habSymmetra.add(new Habilidad("arma",         "Proyector de fotones",   "Imagenes/Symmetra/arma_sym.png",                 "Arma de corto alcance cuyo haz inflige cada vez más daño."));
+        habSymmetra.add(new Habilidad("arma",         "Disparo secundario",     "Imagenes/Symmetra/disparo_secundario.png",       "Mantén pulsado para cargar y suéltalo para disparar un orbe explosivo."));
+        habSymmetra.add(new Habilidad("habilidad",    "Torreta centinela",      "Imagenes/Symmetra/turret.png",                   "Despliegas una pequeña torreta que daña y ralentiza a los enemigos."));
+        habSymmetra.add(new Habilidad("habilidad",    "Teletransportador",      "Imagenes/Symmetra/tp.png",                       "Creas dos teletransportadores temporales que permiten viajar de uno a otro al instante."));
+        habSymmetra.add(new Habilidad("definitiva",   "Barrera de fotones",     "Imagenes/Symmetra/photon_barrier.png",           "Despliegas una barrera de energía enorme."));
+        service.guardar(new Heroe("symmetra", "Symmetra", "dps", "Symmetra literalmente dobla la realidad. Manipulando estructuras de luz sólida, moldea el mundo a su antojo, con la esperanza de crear una sociedad perfecta.", "Imagenes/Symmetra/portada_sym.png", 275, habSymmetra));
+
+        // ── Torbjörn ──────────────────────────────────────────────────────
+        List<Habilidad> habTorb = new ArrayList<>();
+        habTorb.add(new Habilidad("pasivaRol",    "Función: Daño",         "Imagenes/habilidades_comunes/rol_dps.svg",      "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habTorb.add(new Habilidad("arma",         "Remachadora",           "Imagenes/Torbjorn/rivet_gun.png",               "Arma de largo alcance y baja cadencia de fuego."));
+        habTorb.add(new Habilidad("arma",         "Disparo secundario",    "Imagenes/Torbjorn/disparo_secundario.png",      "Arma de corto alcance, poderosa pero poco precisa."));
+        habTorb.add(new Habilidad("arma",         "Martillo de forja",     "Imagenes/Torbjorn/hammer.png",                  "Golpeas con el martillo para reparar tu torreta o dañar a un enemigo."));
+        habTorb.add(new Habilidad("habilidad",    "Desplegar torreta",     "Imagenes/Torbjorn/turret.png",                  "Despliegas una torreta que se autoconstruye."));
+        habTorb.add(new Habilidad("habilidad",    "Sobrecarga",            "Imagenes/Torbjorn/overload.png",                "Obtén salud adicional y mejora tus velocidades de ataque, movimiento y recarga."));
+        habTorb.add(new Habilidad("definitiva",   "Fusión nuclear",        "Imagenes/Torbjorn/core.png",                    "Creas charcos de escoria fundida que daña a los enemigos. Inflige daño adicional a la armadura."));
+        service.guardar(new Heroe("torbjorn", "Torbjörn", "dps", "En su apogeo, Overwatch poseía uno de los armamentos más avanzados del planeta, cuyo origen se remontaba al taller de un ingenioso ingeniero llamado Torbjörn Lindholm.", "Imagenes/Torbjorn/portada_torb.png", 300, habTorb));
+
+        // ── Tracer ────────────────────────────────────────────────────────
+        List<Habilidad> habTracer = new ArrayList<>();
+        habTracer.add(new Habilidad("pasivaRol",    "Función: Daño",         "Imagenes/habilidades_comunes/rol_dps.svg",      "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habTracer.add(new Habilidad("arma",         "Pistolas de pulsos",    "Imagenes/Tracer/pistols.png",                   "Armas automáticas de corto alcance."));
+        habTracer.add(new Habilidad("habilidad",    "Traslación",            "Imagenes/Tracer/blink.png",                     "Te teletransportas en la dirección en la que te estés moviendo."));
+        habTracer.add(new Habilidad("habilidad",    "Regresión",             "Imagenes/Tracer/recall.png",                    "Restablece tu ubicación y salud anteriores al viajar atrás en el tiempo."));
+        habTracer.add(new Habilidad("definitiva",   "Bomba de pulsos",       "Imagenes/Tracer/pulse_bomb.png",                "Lanza un potente explosivo adhesivo."));
+        service.guardar(new Heroe("tracer", "Tracer", "dps", "Tracer, la antigua agente de Overwatch, es una aventurera que viaja en el tiempo y una fuerza imparable del bien.", "Imagenes/Tracer/portada_tracer.png", 175, habTracer));
+
+        // ── Vendetta ──────────────────────────────────────────────────────
+        List<Habilidad> habVendetta = new ArrayList<>();
+        habVendetta.add(new Habilidad("pasivaRol",    "Función: Daño",           "Imagenes/habilidades_comunes/rol_dps.svg",     "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habVendetta.add(new Habilidad("pasivaPropia", "Arremetida",              "Imagenes/Vendetta/pasiva_vendetta.png",        "Golpea enemigos para aumentar la velocidad de movimiento y ataque."));
+        habVendetta.add(new Habilidad("arma",         "Colmillo Palatino",       "Imagenes/Vendetta/arma_vendetta.png",          "Espadón de luz sólida. Encadena tajos para terminar con un golpe destructivo por encima de la cabeza."));
+        habVendetta.add(new Habilidad("arma",         "Postura de protección",   "Imagenes/Vendetta/warding.png",                "Bloquea con tu espada, reduce el daño frontal y repele los ataques cuerpo a cuerpo. Bloquear daño consume energía."));
+        habVendetta.add(new Habilidad("habilidad",    "Espiral de tajos",        "Imagenes/Vendetta/dash.png",                   "Te lanzas hacia delante y realizas un tajo circular."));
+        habVendetta.add(new Habilidad("habilidad",    "Corte volador",           "Imagenes/Vendetta/slice.png",                  "Lanza tu espada en la dirección a la que te diriges y luego vuela hacia ella."));
+        habVendetta.add(new Habilidad("habilidad",    "Corte proyectado",        "Imagenes/Vendetta/projected_edge.png",         "Disponibles cuando está activa la postura de protección. Consume energía para lanzar un proyectil ancho."));
+        habVendetta.add(new Habilidad("definitiva",   "Partemundos",             "Imagenes/Vendetta/sundering_blade.png",        "Atraviesa prácticamente todas las defensas e inflige mucho daño a los enemigos frente a ti."));
+        service.guardar(new Heroe("vendetta", "Vendetta", "dps", "Como campeona del Coliseo y miembro de la élite italiana, Vendetta no se detendrá ante nada para recuperar el trono del imperio criminal de su familia. Conocida por su furia explosiva y su crueldad en la batalla, lo único que supera su destreza en el combate físico es su ambición desmedida.", "Imagenes/Vendetta/portada_vendetta.png", 275, habVendetta));
+
+        // ── Venture ───────────────────────────────────────────────────────
+        List<Habilidad> habVenture = new ArrayList<>();
+        habVenture.add(new Habilidad("pasivaRol",    "Función: Daño",               "Imagenes/habilidades_comunes/rol_dps.svg",      "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habVenture.add(new Habilidad("pasivaPropia", "Paliza",                      "Imagenes/Venture/paliza.png",                   "Los ataques cuerpo a cuerpo rápidos infligen más daño."));
+        habVenture.add(new Habilidad("pasivaPropia", "Determinación exploradora",   "Imagenes/Venture/determinacion.png",            "El uso de habilidades confiere escudos temporales."));
+        habVenture.add(new Habilidad("arma",         "Excavación inteligente",      "Imagenes/Venture/arma_venture.png",             "Lanza una carga sísmica que explota a poca distancia."));
+        habVenture.add(new Habilidad("habilidad",    "Enterrarse",                  "Imagenes/Venture/burrow.png",                   "Te entierras y te vuelves invulnerable. Pulsa o mantén para emerger e infligir daño a los enemigos."));
+        habVenture.add(new Habilidad("habilidad", "Perforación",                    "Imagenes/Venture/drill_dash.png",               "Te lanzas hacia delante tanto si estás bajo tierra como en la superficie, lo que hace retroceder a los enemigos. El tiempo de reutilización se recarga más rápido mientras Enterrarse esté activa."));
+        habVenture.add(new Habilidad("definitiva",   "Impacto tectónico",           "Imagenes/Venture/tectonic_shock.png",           "Lanza ondas de choque dañinas."));
+        service.guardar(new Heroe("venture", "Venture", "dps", "Arqueólogo y explorador trotamundos, Venture siente pasión por resolver los misterios de la historia.", "Imagenes/Venture/portada_venture.png", 250, habVenture));
+
+        // ── Widowmaker ────────────────────────────────────────────────────
+        List<Habilidad> habWidow = new ArrayList<>();
+        habWidow.add(new Habilidad("pasivaRol",    "Función: Daño",         "Imagenes/habilidades_comunes/rol_dps.svg",       "Dañar a un enemigo reduce temporalmente la curación que recibe."));
+        habWidow.add(new Habilidad("arma",         "Beso de la viuda",      "Imagenes/Widowmaker/arma_widow.png",             "Arma de asalto automática."));
+        habWidow.add(new Habilidad("arma",         "Apuntado",              "Imagenes/habilidades_comunes/apuntado_3.png",    "Mantén pulsado para usar un rifle de francotirador de largo alcance."));
+        habWidow.add(new Habilidad("habilidad",    "Gancho",                "Imagenes/Widowmaker/hook.png",                   "Lanzas un gancho que te sube a una cornisa."));
+        habWidow.add(new Habilidad("habilidad",    "Mina venenosa",         "Imagenes/Widowmaker/mine.png",                   "Lanzas una trampa venenosa."));
+        habWidow.add(new Habilidad("definitiva",   "Infravisión",           "Imagenes/Widowmaker/walls.png",                  "Permites a tu equipo ver la ubicación de los enemigos."));
+        service.guardar(new Heroe("widowmaker", "Widowmaker", "dps", "Widowmaker es la asesina perfecta: una asesina paciente y despiadadamente eficiente que no muestra ni emoción ni remordimiento.", "Imagenes/Widowmaker/portada_widow.png", 225, habWidow));
+
         // ── Ana ───────────────────────────────────────────────────────────
         List<Habilidad> habAna = new ArrayList<>();
         habAna.add(new Habilidad("pasivaRol",  "Función: Apoyo",  "Imagenes/habilidades_comunes/rol_supp.svg",      "Empieza a regenerar salud más rápidamente."));
@@ -259,7 +469,7 @@ public class HeroeController {
         habCat.add(new Habilidad("habilidad",      "Línea de vida",              "Imagenes/Cat/lifeline.png",                     "Activa el modo transporte, lo que permite remolcar a un aliado. Aumenta la velocidad de movimiento y sana a tu aliado."));
         habCat.add(new Habilidad("habilidad",      "Ronroneo",                   "Imagenes/Cat/purr.png",                         "Sanación de zona pulsante que aumenta en frecuencia con el tiempo. Repele a los enemigos cercanos cuando se activa."));
         habCat.add(new Habilidad("definitiva",     "Gata secuestradora",         "Imagenes/Cat/catnapper.png",                    "Lánzate hacia un punto del suelo, derribando a enemigos y atrapando al más cercano a ti."));
-        service.guardar(new Heroe("cat", "Jetpack Cat", "apoyo", "Jetpack Cat, un intrépido piloto felino equipado con el último invento de propulsión a chorro de Brigitte, aporta un adorable apoyo aéreo al campo de batalla.", "Imagenes/Cat/portada_jetpack_cat.png", 225, habCat));
+        service.guardar(new Heroe("jetpackCat", "Jetpack Cat", "apoyo", "Jetpack Cat, un intrépido piloto felino equipado con el último invento de propulsión a chorro de Brigitte, aporta un adorable apoyo aéreo al campo de batalla.", "Imagenes/Cat/portada_jetpack_cat.png", 225, habCat));
 
         // ── Juno ──────────────────────────────────────────────────────────
         List<Habilidad> habJuno = new ArrayList<>();
@@ -318,21 +528,77 @@ public class HeroeController {
         habMercy.add(new Habilidad("definitiva",     "Valkiria",                "Imagenes/Mercy/valkyrie.png",                  "Te permite volar y potencia tus habilidades."));
         service.guardar(new Heroe("mercy", "Mercy", "apoyo", "La Dra. Angela Ziegler es un ángel guardián para quienes están bajo su cuidado: una sanadora sin igual, una científica brillante y una firme defensora de la paz.", "Imagenes/Mercy/portada_mercy.png", 225, habMercy));
 
+        // ── Mizuki ──────────────────────────────────────────────────────────
+        List<Habilidad> habMizuki = new ArrayList<>();
+        habMizuki.add(new Habilidad("pasivaRol",      "Función: Apoyo",        "Imagenes/habilidades_comunes/rol_supp.svg",  "Empieza a regenerar salud más rápidamente."));
+        habMizuki.add(new Habilidad("pasivaPropia",   "Aura reparadora",       "Imagenes/Mizuki/pasiva_mizuki.png",          "Sana a los aliados cercanos. Es más fuerte al infligir daño y sanar a otros."));
+        habMizuki.add(new Habilidad("arma",           "Guja espiritual",       "Imagenes/Mizuki/arma_mizuki.png",            "Un proyectil que rebota y daña a los enemigos."));
+        habMizuki.add(new Habilidad("habilidad",      "Sanación Kasa",         "Imagenes/Mizuki/kasa.png",                   "Lanza tu sombrero para que rebote entre los aliados y los sane."));
+        habMizuki.add(new Habilidad("habilidad",      "Cadena vinculante",     "Imagenes/Mizuki/chain.png",                  "Lanza una cadena a un enemigo que frena su movimiento."));
+        habMizuki.add(new Habilidad("habilidad",      "Regreso Katashiro",     "Imagenes/Mizuki/return.png",                 "Da un salto hacia delante y obtén velocidad de movimiento aumentada. Vuelve a activarlo para teletransportarte de vuelta."));
+        habMizuki.add(new Habilidad("definitiva",     "Santuario Kekkai",      "Imagenes/Mizuki/sanctuary.png",              "Crea un santuario que sana a los aliados en su interior y absorbe los proyectiles del enemigo que lo atraviesan."));
+        service.guardar(new Heroe("mizuki", "Mizuki", "apoyo", "Nacido bajo la sombra de la desgracia, Mizuki hará lo que sea necesario para liberarse de su maldición y decidir su propio destino.", "Imagenes/Mizuki/portada_mizuki.png", 250, habMizuki));
+
+        // ── Moira ───────────────────────────────────────────────────────────
+        List<Habilidad> habMoira = new ArrayList<>();
+        habMoira.add(new Habilidad("pasivaRol",      "Función: Apoyo",              "Imagenes/habilidades_comunes/rol_supp.svg",   "Empieza a regenerar salud más rápidamente."));
+        habMoira.add(new Habilidad("arma",           "Rayo biótico",                "Imagenes/Moira/arma_moira.png",               "Mantén pulsado para sanar a todos los aliados frente a ti. Consumes energía biótica."));
+        habMoira.add(new Habilidad("arma",           "Disparo secundario",          "Imagenes/Moira/disparo_secundario.png",       "Arma con haz de largo alcance. El daño infligido te sana y repone tu energía biótica."));
+        habMoira.add(new Habilidad("habilidad",      "Orbe biótico",                "Imagenes/Moira/biotic_orb.png",               "Dispara una bola que rebota y que sana a los aliados cercanos o daña a los enemigos cercanos."));
+        habMoira.add(new Habilidad("habilidad",      "Evanescencia",                "Imagenes/Moira/fade.png",                     "Desapareces, aceleras tu movimiento y te vuelves invulnerable, pero dejas de disparar."));
+        habMoira.add(new Habilidad("definitiva",     "Coalescencia",                "Imagenes/Moira/coal.png",                     "Disparas un haz que sana a los aliados y daña a los enemigos."));
+        service.guardar(new Heroe("moira", "Moira", "apoyo", "Igualmente brillante y controvertida, la científica Moira O'Deorain está a la vanguardia de la ingeniería genética, buscando una manera de reescribir los componentes fundamentales de la vida.", "Imagenes/Moira/portada_moira.png", 225, habMoira));
+
+        // ── Wuyang ────────────────────────────────────────────────────────
+        List<Habilidad> habWuyang = new ArrayList<>();
+        habWuyang.add(new Habilidad("pasivaRol",    "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_support.svg",     "Se cura automáticamente tras un breve periodo sin recibir daño."));
+        habWuyang.add(new Habilidad("arma",         "Bastón de Xuanwu",     "Imagenes/Wuyang/staff.png",                        "Dispara un orbe de agua dañino. Mantén para controlar su trayectoria y potenciar la explosión."));
+        habWuyang.add(new Habilidad("arma",         "Flujo restaurativo",   "Imagenes/Wuyang/stream.png",                       "Dirige un flujo sanador pasivo hacia un aliado. Mantén sobre el objetivo para sanar manualmente a un ritmo más rápido, lo que consume recursos de sanación."));
+        habWuyang.add(new Habilidad("habilidad",    "Ola guardiana",        "Imagenes/Wuyang/wave.png",                         "Envía una ola hacia delante que aumenta la cantidad de sanación que reciben los aliados y repele a los enemigos."));
+        habWuyang.add(new Habilidad("habilidad",    "Torrente impetuoso",   "Imagenes/Wuyang/torrent.png",                      "Deslízate sobre el agua para moverte más rápido y saltar más alto."));
+        habWuyang.add(new Habilidad("definitiva",   "Estallido de marea",   "Imagenes/Wuyang/tidal.png",                        "Protege a un aliado o a ti mismo con agua que detona tras unos instantes. La explosión derriva a los enemigos y sana enormemente al objetivo protegido."));
+        service.guardar(new Heroe("wuyang", "Wuyang", "apoyo", "Wuyang, experta en tecnología curativa proveniente de la Facultad de Agua de la Universidad de Wuxing, siempre está lista para cambiar el rumbo de la batalla.", "Imagenes/Wuyang/portada_wuyang.png", 225, habWuyang));
+
+        // ── Zenyatta ──────────────────────────────────────────────────────
+        List<Habilidad> habZen = new ArrayList<>();
+        habZen.add(new Habilidad("pasivaRol",      "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_support.svg",     "Se cura automáticamente tras un breve periodo sin recibir daño."));
+        habZen.add(new Habilidad("pasivaPropia",   "Patada veloz",         "Imagenes/Zenyatta/kick.png",                       "El daño de los ataques cuerpo a cuerpo aumenta un 50% y la repulsión aumenta de forma considerable."));
+        habZen.add(new Habilidad("arma",           "Orbe de destrucción",  "Imagenes/Zenyatta/arma_zen.png",                   "Arma de proyectiles de energía. Cárgalo para lanzar más proyectiles."));
+        habZen.add(new Habilidad("habilidad",      "Orbe de discordia",    "Imagenes/Zenyatta/discord.png",                    "Lanzas este orbe a un enemigo para aumentar el daño que sufre."));
+        habZen.add(new Habilidad("habilidad",      "Orbe de armonía",      "Imagenes/Zenyatta/harmony.png",                    "Lanzas este orbe a un aliado para sanarlo."));
+        habZen.add(new Habilidad("definitiva",     "Trascendencia",        "Imagenes/Zenyatta/trans.png",                      "Te vuelves invulnerable, te mueves más rápido y sanas a los aliados cercanos."));
+        service.guardar(new Heroe("zenyatta", "Zenyatta", "apoyo", "Zenyatta es un monje ómnico que vaga por el mundo en busca de la iluminación espiritual. Se dice que quienes se cruzan en su camino jamás vuelven a ser los mismos.", "Imagenes/Zenyatta/portada_zen.png", 250, habZen));
+
     }
 
+    // GET /heroes → devuelve todos los héroes
     @GetMapping("/heroes")
     public List<Heroe> getHeroes() {
         return service.listar();
     }
 
+    // GET /heroes/{id} → devuelve un héroe por su id
     @GetMapping("/heroes/{id}")
     public Heroe getHeroe(@PathVariable String id) {
         return service.buscarPorId(id);
     }
 
+    // POST /heroes → añade un héroe nuevo
     @PostMapping("/heroes")
     public Heroe addHeroe(@RequestBody Heroe heroe) {
         return service.guardar(heroe);
+    }
+
+    // DELETE /heroes/{id} → elimina un héroe
+    @DeleteMapping("/heroes/{id}")
+    public void deleteHeroe(@PathVariable String id) {
+        service.eliminar(id);
+    }
+
+    // PUT /heroes/{id} → edita un héroe
+    @PutMapping("/heroes/{id}")
+    public Heroe updateHeroe(@PathVariable String id, @RequestBody Heroe heroe) {
+        return service.actualizar(id, heroe);
     }
 
 }

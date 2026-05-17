@@ -31,6 +31,61 @@ header h1 {
     color: #e94560;
 }
 
+    /* Botón Añadir héroe */
+.btn-anadir {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+}
+
+.btn-anadir:hover {
+    background-color: #c0002a;
+    border-color: #c0002a;
+    color: #ffffff;
+}
+
+.signo-mas {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+    /* Botón Editar */
+.btn-editar {
+    background-color: #0f3460;
+    border-color: #4a90d9;
+    color: #ffffff;
+    font-size: 0.75rem;
+    height: 41px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-editar:hover {
+    background-color: #4a90d9;
+    border-color: #4a90d9;
+    color: #ffffff;
+}
+
+    /* Botón Eliminar */
+.btn-eliminar {
+    background-color: #2a0a0a;
+    border-color: #d94a4a;
+    color: #ffffff;
+    font-size: 0.75rem;
+    height: 41px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-eliminar:hover {
+    background-color: #d94a4a;
+    border-color: #d94a4a;
+    color: #ffffff;
+}
 /* ── TARJETAS ────────────────────────────────────────────── */
 .tarjeta {
     background-color: #16213e;
@@ -39,6 +94,8 @@ header h1 {
     overflow: hidden;
     transition: transform 0.2s;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 .tarjeta:hover {
@@ -53,6 +110,15 @@ header h1 {
 
 .tarjeta-body {
     padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+}
+
+.tarjeta-body .d-flex.gap-2 {
+    margin-top: auto;
+    padding-top: 0.5rem;
 }
 
 .tarjeta-body h6 {

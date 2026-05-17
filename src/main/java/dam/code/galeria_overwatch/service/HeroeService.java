@@ -33,4 +33,18 @@ public class HeroeService {
         return repo.findById(id).orElse(null);
     }
 
+    public void eliminar(String id) {
+        repo.deleteById(id);
+    }
+
+    public Heroe actualizar(String id, Heroe heroe) {
+        heroe.setId(id);
+        if (heroe.getHabilidades() != null) {
+            for (Habilidad h : heroe.getHabilidades()) {
+                h.setHeroe(heroe);
+            }
+        }
+        return repo.save(heroe);
+    }
+
 }

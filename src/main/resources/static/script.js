@@ -40,10 +40,29 @@ function renderizar() {
                 <div class="tarjeta-body">
                     <h6 class="mb-1">${h.nombre}</h6>
                     <span class="badge ${badgeClass}">${h.rol}</span>
-                    <p class="small mt-2 mb-0">${h.descripcion}</p>
+                    <p class="small mt-2 mb-2">${h.descripcion}</p>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-sm btn-editar btnEditar">✏️<br>Editar</button>
+                        <button class="btn btn-sm btn-eliminar btnEliminar">🗑️<br>Eliminar</button>
+                    </div>
                 </div>
             </div>`;
         col.querySelector(".tarjeta").addEventListener("click", () => abrirDetalle(h));
+        col.querySelector(".btnEliminar").addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (confirm("¿Seguro que quieres eliminar a " + h.nombre + "?")) {
+                fetch(API + "/" + h.id, { method: "DELETE" })
+                    .then(() => {
+                        heroes = heroes.filter(x => x.id !== h.id);
+                        renderizar();
+                    });
+            }
+        });
+
+        col.querySelector(".btnEditar").addEventListener("click", (e) => {
+            e.stopPropagation();
+            abrirEditar(h);
+        });
         galeria.appendChild(col);
     });
 }
@@ -285,5 +304,45 @@ document.getElementById("btnConfirmarAnadir").addEventListener("click", () => {
         heroes.push(h);
         renderizar();
         bootstrap.Modal.getInstance(document.getElementById("modalAnadir")).hide();
+    });
+});
+
+
+function abrirEditar(h) {
+    document.getElementById("editarId").value = h.id;
+    document.getElementById("editarNombre").value = h.nombre;
+    document.getElementById("editarRol").value = h.rol;
+    document.getElementById("editarVida").value = h.vida;
+    document.getElementById("editarDesc").value = h.descripcion;
+    new bootstrap.Modal(document.getElementById("modalEditar")).show();
+}
+
+document.getElementById("btnConfirmarEditar").addEventListener("click", () => {
+    const id   = document.getElementById("editarId").value;
+    const heroe = {
+        id:          id,
+        nombre:      document.getElementById("editarNombre").value.trim(),
+        rol:         document.getElementById("editarRol").value,
+        vida:        parseInt(document.getElementById("editarVida").value) || 0,
+        descripcion: document.getElementById("editarDesc").value.trim(),
+        portada:     heroes.find(h => h.id === id).portada,
+        habilidades: heroes.find(h => h.id === id).habilidades
+    };
+
+    fetch(API + "/" + id, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(heroe)
+    })
+    .then(res => res.json())
+    .then(actualizado => {
+        for (let i = 0; i < heroes.length; i++) {
+            if (heroes[i].id === id) {
+                heroes[i] = actualizado;
+                break;
+            }
+        }
+        renderizar();
+        bootstrap.Modal.getInstance(document.getElementById("modalEditar")).hide();
     });
 });
