@@ -551,7 +551,7 @@ public class HeroeController {
 
         // ── Wuyang ────────────────────────────────────────────────────────
         List<Habilidad> habWuyang = new ArrayList<>();
-        habWuyang.add(new Habilidad("pasivaRol",    "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_support.svg",     "Se cura automáticamente tras un breve periodo sin recibir daño."));
+        habWuyang.add(new Habilidad("pasivaRol",    "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_supp.svg",        "Empieza a regenerar salud más rápidamente."));
         habWuyang.add(new Habilidad("arma",         "Bastón de Xuanwu",     "Imagenes/Wuyang/staff.png",                        "Dispara un orbe de agua dañino. Mantén para controlar su trayectoria y potenciar la explosión."));
         habWuyang.add(new Habilidad("arma",         "Flujo restaurativo",   "Imagenes/Wuyang/stream.png",                       "Dirige un flujo sanador pasivo hacia un aliado. Mantén sobre el objetivo para sanar manualmente a un ritmo más rápido, lo que consume recursos de sanación."));
         habWuyang.add(new Habilidad("habilidad",    "Ola guardiana",        "Imagenes/Wuyang/wave.png",                         "Envía una ola hacia delante que aumenta la cantidad de sanación que reciben los aliados y repele a los enemigos."));
@@ -561,7 +561,7 @@ public class HeroeController {
 
         // ── Zenyatta ──────────────────────────────────────────────────────
         List<Habilidad> habZen = new ArrayList<>();
-        habZen.add(new Habilidad("pasivaRol",      "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_support.svg",     "Se cura automáticamente tras un breve periodo sin recibir daño."));
+        habZen.add(new Habilidad("pasivaRol",      "Función: Apoyo",       "Imagenes/habilidades_comunes/rol_supp.svg",     "Se cura automáticamente tras un breve periodo sin recibir daño."));
         habZen.add(new Habilidad("pasivaPropia",   "Patada veloz",         "Imagenes/Zenyatta/kick.png",                       "El daño de los ataques cuerpo a cuerpo aumenta un 50% y la repulsión aumenta de forma considerable."));
         habZen.add(new Habilidad("arma",           "Orbe de destrucción",  "Imagenes/Zenyatta/arma_zen.png",                   "Arma de proyectiles de energía. Cárgalo para lanzar más proyectiles."));
         habZen.add(new Habilidad("habilidad",      "Orbe de discordia",    "Imagenes/Zenyatta/discord.png",                    "Lanzas este orbe a un enemigo para aumentar el daño que sufre."));
