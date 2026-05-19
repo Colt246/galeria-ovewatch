@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Galería de Héroes – Overwatch</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             background-color: #1a1a2e;
@@ -37,15 +42,33 @@
         }
 
         .logo-link:hover img {
-            animation-play-state: paused;
             transform: scale(1.1);
             opacity: 1;
         }
+
+        .contenedor-inicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+        }
+
     </style>
 </head>
 <body>
-<a href="index.html" class="logo-link">
-    <img src="Imagenes/Logo/ow_logo.png" alt="Overwatch">
-</a>
+
+<body>
+
+<div class="contenedor-inicio">
+
+    <a href="index.html" class="logo-link">
+        <img src="Imagenes/Logo/ow_logo.png" alt="Overwatch">
+    </a>
+
+    <p class="texto-inicio">Click to enter the gallery</p>
+
+</div>
+
+</body>
 </body>
 </html>

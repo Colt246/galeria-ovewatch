@@ -1,4 +1,4 @@
-/* ── BASE ───────────────────────────────────────────────── */
+/* ---------------------- Base (body - header) ---------------------- */
 body {
     background-color: #1a1a2e;
     color: #e0e0e0;
@@ -86,7 +86,8 @@ header h1 {
     border-color: #d94a4a;
     color: #ffffff;
 }
-/* ── TARJETAS ────────────────────────────────────────────── */
+
+/* ---------------------- Targetas ---------------------- */
 .tarjeta {
     background-color: #16213e;
     border: 1px solid #0f3460;
@@ -126,23 +127,30 @@ header h1 {
     font-weight: bold;
     border-left: 3px solid #e94560;
     padding-left: 6px;
+    margin-bottom: 12px !important;
 }
 
-/* ── BADGES ROL ──────────────────────────────────────────── */
+/* ---------------------- Badges del Rol ---------------------- */
 .badge-tanque {
     background-color: #4a90d9;
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
 .badge-dps    {
     background-color: #d94a4a;
+    display: inline-flex !important;
+    align-items: center !important;
 }
 
 .badge-apoyo  {
     background-color: #4ad94a;
     color: #000;
+    display: inline-flex !important;
+    align-items: center!important;
 }
 
-/* ── MODAL ───────────────────────────────────────────────── */
+/* ---------------------- Modal ---------------------- */
 .modal-content {
     background-color: #16213e;
     color: #e0e0e0;
@@ -171,7 +179,7 @@ header h1 {
 
 .texto-secundario { color: #aaa; }
 
-/* ── MODO CLARO ──────────────────────────────────────────── */
+/* ---------------------- Modo Claro ---------------------- */
 
 body.modo-claro {
     background-color: #f0f4f8;
@@ -196,7 +204,7 @@ body.modo-claro .tarjeta {
 
 body.modo-claro .tarjeta-body h6 { color: #c0002a; }
 
-/* El modal siempre oscuro — así los iconos y textos siempre se ven bien */
+/* El modal siempre oscuro - así los iconos y textos siempre se ven bien */
 
 .modal-content {
     background-color: #16213e;
@@ -228,6 +236,7 @@ body.modo-claro .tarjeta-body h6 { color: #c0002a; }
     color: #aaa;
 }
 
+/* ---------------------- Footer ---------------------- */
 body.modo-claro footer {
     background-color: #dce8f5;
     border-color: #a0c4e8;
