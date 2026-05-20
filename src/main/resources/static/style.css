@@ -171,32 +171,44 @@ header h1 {
     border: 1px solid #e94560;
 }
 
-.texto-secundario { color: #aaa; }
+.texto-secundario {
+    color: #aaa;
+}
 
 /* ---------------------- Modo Claro ---------------------- */
 
-body.modo-claro {
-    background-color: #f0f4f8;
-    color: #1a1a2e;
-}
+body.modo-claro { background-color: #fdf6e3; color: #3a2e1e; }
 
 body.modo-claro header {
-    background-color: #dce8f5;
-    border-color: #a0c4e8;
+    background-color: #f5e6c8;
+    border-color: #d4a96a;
 }
 
 body.modo-claro #btnModo {
-    color: #1a1a2e;
-    border-color: #1a1a2e;
+    color: #3a2e1e;
+    border-color: #3a2e1e;
 }
 
 body.modo-claro .tarjeta {
-    background-color: #ffffff;
-    border-color: #a0c4e8;
-    color: #1a1a2e;
+    background-color: #fffaf0;
+    border-color: #d4a96a;
+    color: #3a2e1e;
 }
 
-body.modo-claro .tarjeta-body h6 { color: #c0002a; }
+    /* ---------- Footer en Modo Claro ---------- */
+body.modo-claro footer {
+    background-color: #f5e6c8 !important;
+    border-color: #d4a96a !important;
+    color: #3a2e1e !important;
+}
+
+body.modo-claro footer a {
+    color: #8b4513 !important;
+}
+
+body.modo-claro footer strong {
+    color: #3a2e1e !important;
+}
 
 /* El modal siempre oscuro - así los iconos y textos siempre se ven bien */
 
@@ -228,19 +240,4 @@ body.modo-claro .tarjeta-body h6 { color: #c0002a; }
 
 .texto-secundario {
     color: #aaa;
-}
-
-/* ---------------------- Footer ---------------------- */
-body.modo-claro footer {
-    background-color: #dce8f5;
-    border-color: #a0c4e8;
-    color: #555;
-}
-
-body.modo-claro footer a {
-    color: #1a5fa8;
-}
-
-body.modo-claro footer strong {
-    color: #1a1a2e;
 }
