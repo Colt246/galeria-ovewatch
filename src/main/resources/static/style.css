@@ -206,38 +206,7 @@ body.modo-claro footer a {
     color: #8b4513 !important;
 }
 
+
 body.modo-claro footer strong {
     color: #3a2e1e !important;
-}
-
-/* El modal siempre oscuro - así los iconos y textos siempre se ven bien */
-
-.modal-content {
-    background-color: #16213e;
-    color: #e0e0e0;
-}
-
-.bloque-habilidad {
-    background-color: #0a1628;
-}
-
-.bloque-arma {
-    background-color: #0f2030;
-}
-
-.bloque-pasiva-propia {
-    background-color: #1a2e0f;
-}
-
-.bloque-pasiva-rol {
-    background-color: #0f3460;
-}
-
-.bloque-definitiva {
-    background-color: #1a0a2e;
-    border: 1px solid #e94560;
-}
-
-.texto-secundario {
-    color: #aaa;
 }
