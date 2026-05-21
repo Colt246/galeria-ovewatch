@@ -581,31 +581,31 @@ public class HeroeController {
 
     }
 
-    // GET /heroes → devuelve todos los héroes
+    // GET → devuelve todos los héroes
     @GetMapping("/heroes")
     public List<Heroe> getHeroes() {
         return service.listar();
     }
 
-    // GET /heroes/{id} → devuelve un héroe por su id
+    // GET → devuelve un héroe por su id
     @GetMapping("/heroes/{id}")
     public Heroe getHeroe(@PathVariable String id) {
         return service.buscarPorId(id);
     }
 
-    // POST /heroes → añade un héroe nuevo
+    // POST → añade un héroe nuevo
     @PostMapping("/heroes")
     public Heroe addHeroe(@RequestBody Heroe heroe) {
         return service.guardar(heroe);
     }
 
-    // DELETE /heroes/{id} → elimina un héroe
+    // DELETE → elimina un héroe
     @DeleteMapping("/heroes/{id}")
     public void deleteHeroe(@PathVariable String id) {
         service.eliminar(id);
     }
 
-    // PUT /heroes/{id} → edita un héroe
+    // PUT → edita un héroe
     @PutMapping("/heroes/{id}")
     public Heroe updateHeroe(@PathVariable String id, @RequestBody Heroe heroe) {
         return service.actualizar(id, heroe);

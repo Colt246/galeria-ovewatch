@@ -38,6 +38,11 @@ header h1 {
     color: #ffffff;
 }
 
+#btnModo {
+    width: 130px;
+    text-align: center;
+}
+
 .btn-anadir:hover {
     background-color: #c0002a;
     border-color: #c0002a;
@@ -177,7 +182,10 @@ header h1 {
 
 /* ---------------------- Modo Claro ---------------------- */
 
-body.modo-claro { background-color: #fdf6e3; color: #3a2e1e; }
+body.modo-claro {
+    background-color: #fdf6e3;
+    color: #3a2e1e;
+}
 
 body.modo-claro header {
     background-color: #f5e6c8;
@@ -195,7 +203,18 @@ body.modo-claro .tarjeta {
     color: #3a2e1e;
 }
 
-    /* ---------- Footer en Modo Claro ---------- */
+body.modo-claro #btnVistaGeneral {
+    color: #3a2e1e;
+    border-color: #3a2e1e;
+}
+
+
+body.modo-claro #btnVistaGeneral:hover {
+    background-color: #3a2e1e;
+    color: #fdf6e3;
+}
+
+/* ---------- Footer en Modo Claro ---------- */
 body.modo-claro footer {
     background-color: #f5e6c8 !important;
     border-color: #d4a96a !important;

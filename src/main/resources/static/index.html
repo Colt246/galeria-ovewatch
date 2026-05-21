@@ -14,6 +14,7 @@
             <img src="Imagenes/Logo/ow_logo.png" alt="Overwatch" class="logo-header">
             <h1 class="m-0">Galería de Héroes – Overwatch</h1>
         </div>
+        <button id="btnVistaGeneral" class="btn btn-outline-light btn-sm me-2">📋 Ver todos</button>
         <button id="btnModo" class="btn btn-outline-light btn-sm">☀️ Modo Claro</button>
     </div>
     <div class="d-flex flex-wrap gap-3 mt-3 align-items-center">
@@ -180,6 +181,21 @@
                 <input type="number" id="editarVida" class="form-control mb-2" placeholder="Vida">
                 <textarea id="editarDesc" class="form-control mb-3" placeholder="Descripción"></textarea>
                 <button id="btnConfirmarEditar" class="btn btn-success w-100">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal vista general -->
+<div class="modal fade" id="modalVistaGeneral" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Todos los héroes</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="vistaGeneralContenido"></div>
             </div>
         </div>
     </div>

@@ -346,3 +346,55 @@ document.getElementById("btnConfirmarEditar").addEventListener("click", () => {
         bootstrap.Modal.getInstance(document.getElementById("modalEditar")).hide();
     });
 });
+
+// Vista general
+function renderizarVistaGeneral() {
+    const contenedor = document.getElementById("vistaGeneralContenido");
+    contenedor.innerHTML = "";
+
+    const roles = [
+        { clave: "tanque", nombre: "Tanque", icono: "Imagenes/habilidades_comunes/rol_tank.svg" },
+        { clave: "dps",    nombre: "Daño",   icono: "Imagenes/habilidades_comunes/rol_dps.svg"  },
+        { clave: "apoyo",  nombre: "Apoyo",  icono: "Imagenes/habilidades_comunes/rol_supp.svg" }
+    ];
+
+    for (let r = 0; r < roles.length; r++) {
+        const rol = roles[r];
+        const lista = [];
+        for (let i = 0; i < heroes.length; i++) {
+            if (heroes[i].rol === rol.clave) {
+                lista.push(heroes[i]);
+            }
+        }
+        lista.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+        const seccion = document.createElement("div");
+        seccion.className = "mb-4";
+        seccion.innerHTML = `
+            <h6 class="text-center fw-bold mb-3" style="color:#e94560;letter-spacing:2px;">
+                <img src="${rol.icono}" style="width:20px;height:20px;object-fit:contain;"> ${rol.nombre.toUpperCase()}
+            </h6>
+            <div class="d-flex flex-wrap justify-content-center gap-3" id="grupo-${rol.clave}"></div>
+            <hr style="border-color:#0f3460;">`;
+        contenedor.appendChild(seccion);
+
+        const grupo = document.getElementById("grupo-" + rol.clave);
+        for (let i = 0; i < lista.length; i++) {
+            const h = lista[i];
+            const item = document.createElement("div");
+            item.className = "text-center";
+            item.style.width = "70px";
+            item.innerHTML = `
+                <img src="${h.portada}" alt="${h.nombre}"
+                     style="width:56px;height:56px;object-fit:cover;border-radius:50%;border:2px solid #0f3460;"
+                     onerror="this.src='https://placehold.co/56x56?text=${encodeURIComponent(h.nombre[0])}'">
+                <p style="font-size:0.65rem;margin-top:4px;color:#e0e0e0;word-break:break-word;">${h.nombre}</p>`;
+            grupo.appendChild(item);
+        }
+    }
+}
+
+document.getElementById("btnVistaGeneral").addEventListener("click", () => {
+    renderizarVistaGeneral();
+    new bootstrap.Modal(document.getElementById("modalVistaGeneral")).show();
+});
