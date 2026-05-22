@@ -386,9 +386,9 @@ function renderizarVistaGeneral() {
             item.style.width = "70px";
             item.innerHTML = `
                 <img src="${h.portada}" alt="${h.nombre}"
-                     style="width:56px;height:56px;object-fit:cover;border-radius:50%;border:2px solid #0f3460;"
+                     style="width:70px;height:70px;object-fit:cover;border-radius:50%;border:2px solid #0f3460;"
                      onerror="this.src='https://placehold.co/56x56?text=${encodeURIComponent(h.nombre[0])}'">
-                <p style="font-size:0.65rem;margin-top:4px;color:#e0e0e0;word-break:break-word;">${h.nombre}</p>`;
+                <p style="font-size:0.70rem;margin-top:4px;color:#e0e0e0;word-break:break-word;">${h.nombre}</p>`;
             grupo.appendChild(item);
         }
     }
