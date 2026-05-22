@@ -27,49 +27,53 @@ public class HeroeController {
 
         // --- D.Va ----------------------------------------------------------
         List<Habilidad> habDva = new ArrayList<>();
-        habDva.add(new Habilidad("pasivaRol",     "Función: Tanque",    "Imagenes/habilidades_comunes/rol_tank.svg",  "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
-        habDva.add(new Habilidad("pasivaPropia",  "¡Eyección!",         "Imagenes/D.va/eyeccion.png",                 "Eyecta fuera del MECA cuando es destruido."));
-        habDva.add(new Habilidad("arma",          "Cañones de fusión",  "Imagenes/D.va/cañon_fusion.png",             "Armas automáticas de corto alcance y dispersión."));
-        habDva.add(new Habilidad("arma",          "Pistola de luz",     "Imagenes/D.va/pistola_luz.png",              "Arma automática."));
-        habDva.add(new Habilidad("habilidad",     "Matriz de defensa",  "Imagenes/D.va/matrix.png",                   "Bloquea proyectiles en un área frente a ti."));
-        habDva.add(new Habilidad("habilidad",     "Impulsores",         "Imagenes/D.va/boosters.png",                 "Vuela en la dirección en que estás mirando."));
-        habDva.add(new Habilidad("habilidad",     "Micromisiles",       "Imagenes/D.va/micromisiles.png",             "Lanza una descarga de cohetes explosivos."));
-        habDva.add(new Habilidad("definitiva",    "Autodestrucción",    "Imagenes/D.va/dva_bomb.png",                 "Expulsa al piloto y sobrecarga tu MECA, provocando que explote después de un corto periodo de tiempo."));
-        habDva.add(new Habilidad("definitiva",    "MECA",               "Imagenes/D.va/call_mech.png",                "Después de que tu MECA haya sido destruido cae de nuevo a un nuevo MECA para subirse de nuevo."));
-        service.guardar(new Heroe("dva", "D.Va", "tanque", "D.Va era una jugadora profesional que ahora aprovecha sus habilidades para pilotar un meca de última generación al servicio de su país.", "Imagenes/D.va/portada_dva.png", 650, habDva));
+        habDva.add(new Habilidad("pasivaRol",     "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",               "Da menos carga de la definitiva con sanación y daño recibidos. Aumenta la salud base en los modos de cola por función."));
+        habDva.add(new Habilidad("pasivaSubRol",  "Función: Iniciador",    "Imagenes/habilidades_comunes/Sub-Rol_Tank_Initiator.svg", "Obtienes una sanación en el tiempo tras usar cierta habilidad de movimiento."));
+        habDva.add(new Habilidad("pasivaPropia",  "¡Eyección!",            "Imagenes/D.va/eyeccion.png",                              "Eyecta fuera del MECA cuando es destruido."));
+        habDva.add(new Habilidad("arma",          "Cañones de fusión",     "Imagenes/D.va/cañon_fusion.png",                          "Armas automáticas de corto alcance y dispersión."));
+        habDva.add(new Habilidad("arma",          "Pistola de luz",        "Imagenes/D.va/pistola_luz.png",                           "Arma automática."));
+        habDva.add(new Habilidad("habilidad",     "Matriz de defensa",     "Imagenes/D.va/matrix.png",                                "Bloquea proyectiles en un área frente a ti."));
+        habDva.add(new Habilidad("habilidad",     "Impulsores",            "Imagenes/D.va/boosters.png",                              "Vuela en la dirección en que estás mirando."));
+        habDva.add(new Habilidad("habilidad",     "Micromisiles",          "Imagenes/D.va/micromisiles.png",                          "Lanza una descarga de cohetes explosivos."));
+        habDva.add(new Habilidad("definitiva",    "Autodestrucción",       "Imagenes/D.va/dva_bomb.png",                              "Expulsa al piloto y sobrecarga tu MECA, provocando que explote después de un corto periodo de tiempo."));
+        habDva.add(new Habilidad("definitiva",    "MECA",                  "Imagenes/D.va/call_mech.png",                             "Después de que tu MECA haya sido destruido cae de nuevo a un nuevo MECA para subirse de nuevo."));
+        service.guardar(new Heroe("dva", "D.Va", "Tanque", "Iniciador", "D.Va era una jugadora profesional que ahora aprovecha sus habilidades para pilotar un meca de última generación al servicio de su país.", "Imagenes/D.va/portada_dva.png", 650, habDva));
 
         // --- Domina ----------------------------------------------------------
         List<Habilidad> habDomina= new ArrayList<>();
-        habDomina.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",   "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
-        habDomina.add(new Habilidad("pasivaPropia", "Reconstrucción",        "Imagenes/Domina/pasiva_domina.png",           "Inflingir daño con habilidades restaura escudos."));
-        habDomina.add(new Habilidad("arma",         "Cañón de fotones",      "Imagenes/Domina/photon_magnum.png",           "Haz de alcance medio que culmina con un disparo de alto impacto."));
-        habDomina.add(new Habilidad("habilidad",    "Matriz barrera",        "Imagenes/Domina/barrier_array.png",           "Construye una barrera segmentada."));
-        habDomina.add(new Habilidad("habilidad",    "Repulsores sónicos",    "Imagenes/Domina/sonic_pulsor.png",            "Empuja hacia atrás a los enemigos, aturdiéndolos si golpean una pared."));
-        habDomina.add(new Habilidad("habilidad",    "Carga de cristal",      "Imagenes/Domina/crystal.png",                 "Proyecta un cristal explosivo y lo reactiva para detonarlo."));
-        habDomina.add(new Habilidad("definitiva",   "Panóptico",             "Imagenes/Domina/panopticon.png",              "Dispara una barrera de luz sólida que aprisiona a los jugadores y detona al acabar."));
-        service.guardar(new Heroe("domina", "Domina", "tanque", "Como la negociadora más valiosa de la corporación Vishkar, Domina usa su gran dominio de la luz sólida para hacerse con el control de cualquier situación.", "Imagenes/Domina/portada_domina.png", 650, habDomina));
+        habDomina.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",                 "Da menos carga de la definitiva con sanación y daño recibidos. Aumenta la salud base en los modos de cola por función."));
+        habDomina.add(new Habilidad("pasivaSubRol", "Función: Valeroso",     "Imagenes/habilidades_comunes/Sub-Rol_Tank_Stalwart.svg",    "Obtienes una sanación en el tiempo tras usar cierta habilidad de movimiento."));
+        habDomina.add(new Habilidad("pasivaPropia", "Reconstrucción",        "Imagenes/Domina/pasiva_domina.png",                         "Inflingir daño con habilidades restaura escudos."));
+        habDomina.add(new Habilidad("arma",         "Cañón de fotones",      "Imagenes/Domina/photon_magnum.png",                         "Haz de alcance medio que culmina con un disparo de alto impacto."));
+        habDomina.add(new Habilidad("habilidad",    "Matriz barrera",        "Imagenes/Domina/barrier_array.png",                         "Construye una barrera segmentada."));
+        habDomina.add(new Habilidad("habilidad",    "Repulsores sónicos",    "Imagenes/Domina/sonic_pulsor.png",                          "Empuja hacia atrás a los enemigos, aturdiéndolos si golpean una pared."));
+        habDomina.add(new Habilidad("habilidad",    "Carga de cristal",      "Imagenes/Domina/crystal.png",                               "Proyecta un cristal explosivo y lo reactiva para detonarlo."));
+        habDomina.add(new Habilidad("definitiva",   "Panóptico",             "Imagenes/Domina/panopticon.png",                            "Dispara una barrera de luz sólida que aprisiona a los jugadores y detona al acabar."));
+        service.guardar(new Heroe("domina", "Domina", "Tanque", "Valeroso", "Como la negociadora más valiosa de la corporación Vishkar, Domina usa su gran dominio de la luz sólida para hacerse con el control de cualquier situación.", "Imagenes/Domina/portada_domina.png", 650, habDomina));
 
         // --- Doomfist ----------------------------------------------------------
         List<Habilidad> habDoom = new ArrayList<>();
-        habDoom.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
-        habDoom.add(new Habilidad("pasivaPropia", "La mejor defensa...", "Imagenes/Doomfist/pasiva_doom.png",         "Inflingir daño con habilidades crea un exceso de salud temporal."));
-        habDoom.add(new Habilidad("arma",         "Cañón de mano",       "Imagenes/Doomfist/cañon_mano.png",          "Arma de corto alcance con dispersión. Se recarga automáticamente."));
-        habDoom.add(new Habilidad("habilidad",    "Puño cohete",         "Imagenes/Doomfist/punch.png",               "Mantén pulsado para cargar y suelta para lanzarte hacia delante y derribar al enemigo. El daño aumenta si el enemigo choca contra una pared."));
-        habDoom.add(new Habilidad("habilidad",    "Golpe sísmico",       "Imagenes/Doomfist/slam_doom.png",           "Salta hacia delante y golpea el suelo."));
-        habDoom.add(new Habilidad("habilidad",    "Bloqueo de poder",    "Imagenes/Doomfist/block_doom.png",          "Protégete de los ataques frontales. Bloquear daño fuerte potencia la habilidad Puño Cohete."));
-        habDoom.add(new Habilidad("definitiva",   "Meteoro",             "Imagenes/Doomfist/meteor.png",              "Al pulsar la tecla de la definitiva el personaje salta y desapace. Mueve el área circular donde volverá a caer golpeando la zona objetivo. Se sana durante el tiempo que esté en el aire sin golpear el suelo."));
-        service.guardar(new Heroe("doomfist", "Doomfist", "tanque", "Doomfist fue el líder calculador de Talon, una organización terrorista y fuerza paramilitar que actúa en oposición directa a Overwatch.", "Imagenes/Doomfist/portada_doom.png", 525, habDoom));
+        habDoom.add(new Habilidad("pasivaRol",    "Función: Tanque",       "Imagenes/habilidades_comunes/rol_tank.svg",                  "Da menos carga de la definitiva con sanación y daño recibidos. Aumenta la salud base en los modos de cola por función."));
+        habDoom.add(new Habilidad("pasivaSubRol", "Función: Iniciador",    "Imagenes/habilidades_comunes/Sub-Rol_Tank_Initiator.svg",    "Obtienes una sanación en el tiempo tras usar cierta habilidad de movimiento."));
+        habDoom.add(new Habilidad("pasivaPropia", "La mejor defensa...",   "Imagenes/Doomfist/pasiva_doom.png",                          "Inflingir daño con habilidades crea un exceso de salud temporal."));
+        habDoom.add(new Habilidad("arma",         "Cañón de mano",         "Imagenes/Doomfist/cañon_mano.png",                           "Arma de corto alcance con dispersión. Se recarga automáticamente."));
+        habDoom.add(new Habilidad("habilidad",    "Puño cohete",           "Imagenes/Doomfist/punch.png",                                "Mantén pulsado para cargar y suelta para lanzarte hacia delante y derribar al enemigo. El daño aumenta si el enemigo choca contra una pared."));
+        habDoom.add(new Habilidad("habilidad",    "Golpe sísmico",         "Imagenes/Doomfist/slam_doom.png",                            "Salta hacia delante y golpea el suelo."));
+        habDoom.add(new Habilidad("habilidad",    "Bloqueo de poder",      "Imagenes/Doomfist/block_doom.png",                           "Protégete de los ataques frontales. Bloquear daño fuerte potencia la habilidad Puño Cohete."));
+        habDoom.add(new Habilidad("definitiva",   "Meteoro",               "Imagenes/Doomfist/meteor.png",                               "Al pulsar la tecla de la definitiva el personaje salta y desapace. Mueve el área circular donde volverá a caer golpeando la zona objetivo. Se sana durante el tiempo que esté en el aire sin golpear el suelo."));
+        service.guardar(new Heroe("doomfist", "Doomfist", "Tanque", "Iniciador","Doomfist fue el líder calculador de Talon, una organización terrorista y fuerza paramilitar que actúa en oposición directa a Overwatch.", "Imagenes/Doomfist/portada_doom.png", 525, habDoom));
 
         // --- Hazard ----------------------------------------------------------
         List<Habilidad> habHazard = new ArrayList<>();
-        habHazard.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg", "Reduce los retrocesos y el daño crítico recibido. Reduce la generación de definitiva por curación y daño recibido. Aumenta la salud base en los modos de juego de cola de roles."));
-        habHazard.add(new Habilidad("pasivaPropia", "Brinco",              "Imagenes/Hazard/brinco.png",                "Escala paredes cortas y se agarra a cornisas."));
-        habHazard.add(new Habilidad("arma",         "Lanzaespinas",        "Imagenes/Hazard/arma_hazard.png",           "Dispara una ráfaga de púas."));
-        habHazard.add(new Habilidad("habilidad",    "Protección de púas",  "Imagenes/Hazard/proteccion_puas.png",       "Protégete del daño frontal. Dispara púas teledirigidas a los enemigos cercanos y regenera munición."));
-        habHazard.add(new Habilidad("habilidad",    "Salto violento",      "Imagenes/Hazard/salto_violento.png",        "Arremete hacia adelante. Actívalo de nuevo para cortar a los enemigos y empujarlos hacia atrás."));
-        habHazard.add(new Habilidad("habilidad",    "Muro afilado",        "Imagenes/Hazard/muro_hazard.png",           "Lanza un muro con púas que daña y derriba a los enemigos cercanos."));
-        habHazard.add(new Habilidad("definitiva",   "Aguacero",            "Imagenes/Hazard/hazard_ult.png",            "Hace llover un torrente de púas que inmovilizan a los enemigos."));
-        service.guardar(new Heroe("hazard", "Hazard", "tanque", "Hazard, perturbador radical y arma imparable, se ha hecho famoso en el submundo criminal por luchar para acabar con el sistema.", "Imagenes/Hazard/portada_hazard.png", 650, habHazard));
+        habHazard.add(new Habilidad("pasivaRol",    "Función: Tanque",     "Imagenes/habilidades_comunes/rol_tank.svg",                 "Da menos carga de la definitiva con sanación y daño recibidos. Aumenta la salud base en los modos de cola por función."));
+        habHazard.add(new Habilidad("pasivaSubRol", "Función: Iniciador",  "Imagenes/habilidades_comunes/Sub-Rol_Tank_Initiator.svg",   "Obtienes una sanación en el tiempo tras usar cierta habilidad de movimiento."));
+        habHazard.add(new Habilidad("pasivaPropia", "Brinco",              "Imagenes/Hazard/brinco.png",                                "Escala paredes cortas y se agarra a cornisas."));
+        habHazard.add(new Habilidad("arma",         "Lanzaespinas",        "Imagenes/Hazard/arma_hazard.png",                           "Dispara una ráfaga de púas."));
+        habHazard.add(new Habilidad("habilidad",    "Protección de púas",  "Imagenes/Hazard/proteccion_puas.png",                       "Protégete del daño frontal. Dispara púas teledirigidas a los enemigos cercanos y regenera munición."));
+        habHazard.add(new Habilidad("habilidad",    "Salto violento",      "Imagenes/Hazard/salto_violento.png",                        "Arremete hacia adelante. Actívalo de nuevo para cortar a los enemigos y empujarlos hacia atrás."));
+        habHazard.add(new Habilidad("habilidad",    "Muro afilado",        "Imagenes/Hazard/muro_hazard.png",                           "Lanza un muro con púas que daña y derriba a los enemigos cercanos."));
+        habHazard.add(new Habilidad("definitiva",   "Aguacero",            "Imagenes/Hazard/hazard_ult.png",                            "Hace llover un torrente de púas que inmovilizan a los enemigos."));
+        service.guardar(new Heroe("hazard", "Hazard", "Tanque", "Iniciador", "Hazard, perturbador radical y arma imparable, se ha hecho famoso en el submundo criminal por luchar para acabar con el sistema.", "Imagenes/Hazard/portada_hazard.png", 650, habHazard));
 
         // --- Junker Queen ----------------------------------------------------------
         List<Habilidad> habQueen = new ArrayList<>();

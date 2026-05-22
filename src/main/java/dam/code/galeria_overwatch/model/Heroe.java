@@ -17,6 +17,7 @@ public class Heroe {
     private String id;
     private String nombre;
     private String rol;
+    private String subRol;
 
     @Column(length = 1000)
     private String descripcion;
