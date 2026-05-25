@@ -15,9 +15,11 @@ function renderizar() {
     const rol   = document.getElementById("filtroRol").value;
     const orden = document.getElementById("orden").value;
 
+    const subRol = document.getElementById("filtroSubRol").value;
     let lista = heroes.filter(h =>
         h.nombre.toLowerCase().includes(texto) &&
-        (rol === "todos" || h.rol === rol)
+        (rol === "todos" || h.rol === rol) &&
+        (subRol === "todos" || h.subRol === subRol)
     );
 
     lista.sort((a, b) => orden === "az"
@@ -31,6 +33,22 @@ function renderizar() {
         const badgeClass = h.rol === "tanque" ? "badge-tanque"
                          : h.rol === "dps"    ? "badge-dps"
                          : "badge-apoyo";
+
+        const iconoSubRol = h.subRol ? "Imagenes/habilidades_comunes/Sub-Rol_" +
+            (h.rol === "tanque" ? "Tank" : h.rol === "dps" ? "Damage" : "Support") +
+            "_" +
+            (h.subRol === "fuerte" ? "Bruiser" :
+             h.subRol === "iniciador" ? "Initiator" :
+             h.subRol === "valeroso" ? "Stalwart" :
+             h.subRol === "especialista" ? "Specialist" :
+             h.subRol === "flanqueador" ? "Flanker" :
+             h.subRol === "reconocimiento" ? "Recon" :
+             h.subRol === "tirador" ? "Sharpshooter" :
+             h.subRol === "estratega" ? "Tactician" :
+             h.subRol === "medico" ? "Medic" :
+             h.subRol === "superviviente" ? "Survivor" : "") +
+            ".svg" : "";
+
         const col = document.createElement("div");
         col.className = "col";
         col.innerHTML = `
@@ -39,7 +57,10 @@ function renderizar() {
                      onerror="this.src='https://placehold.co/300x200?text=${encodeURIComponent(h.nombre)}'">
                 <div class="tarjeta-body">
                     <h6 class="mb-1">${h.nombre}</h6>
-                    <span class="badge ${badgeClass}">${h.rol}</span>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <span class="badge ${badgeClass}">${h.rol}</span>
+                        ${iconoSubRol ? `<img src="${iconoSubRol}" alt="${h.subRol}" title="${h.subRol}" style="width:20px;height:20px;object-fit:contain;" onerror="this.style.display='none'">` : ""}
+                    </div>
                     <p class="small mt-2 mb-2">${h.descripcion}</p>
                     <div class="d-flex gap-2">
                         <button class="btn btn-sm btn-editar btnEditar">✏️<br>Editar</button>
@@ -73,10 +94,22 @@ function abrirDetalle(h) {
     document.getElementById("modalDesc").textContent = h.descripcion;
     document.getElementById("modalVida").textContent = h.vida;
 
+    const iconoRol = h.rol === "tanque"
+        ? "Imagenes/habilidades_comunes/rol_tank.svg"
+        : h.rol === "dps"
+        ? "Imagenes/habilidades_comunes/rol_dps.svg"
+        : "Imagenes/habilidades_comunes/rol_supp.svg";
+    document.getElementById("modalIconoRol").src = iconoRol;
+
     document.getElementById("modalPasivaRol").innerHTML = "";
+    document.getElementById("modalPasivaRol").className = "w-100 rounded";
+    document.getElementById("modalPasivaRol").style.display = "none";
     document.getElementById("modalFilaSuperior").innerHTML = "";
     document.getElementById("modalHabilidades").innerHTML = "";
     document.getElementById("modalDefinitiva").innerHTML = "";
+
+    const subRolAnterior = document.getElementById("modalSubRol");
+    if (subRolAnterior) subRolAnterior.remove();
 
     if (!h.habilidades) {
         new bootstrap.Modal(document.getElementById("modalDetalle")).show();
@@ -85,12 +118,19 @@ function abrirDetalle(h) {
 
     const armas         = h.habilidades.filter(hb => hb.tipo === "arma");
     const pasivaRol     = h.habilidades.find(hb => hb.tipo === "pasivaRol");
+    const pasivaSubRol  = h.habilidades.find(hb => hb.tipo === "pasivaSubRol");
     const pasivaPropias = h.habilidades.filter(hb => hb.tipo === "pasivaPropia");
     const habilidades   = h.habilidades.filter(hb => hb.tipo === "habilidad");
     const definitivas   = h.habilidades.filter(hb => hb.tipo === "definitiva");
 
+
+    document.getElementById("modalPasivaRol").style.display = "none";
+
+
     // Pasiva de rol
     if (pasivaRol) {
+        document.getElementById("modalPasivaRol").className = "w-100 rounded p-2 bloque-pasiva-rol";
+        document.getElementById("modalPasivaRol").style.display = "block";
         document.getElementById("modalPasivaRol").innerHTML = `
             <div class="d-flex align-items-center gap-2">
                 <img src="${pasivaRol.icono}" style="width:28px;height:28px;object-fit:contain;"
@@ -100,6 +140,24 @@ function abrirDetalle(h) {
                     <p class="small mb-0 texto-secundario">${pasivaRol.descripcion}</p>
                 </div>
             </div>`;
+    }
+
+    // Pasiva de sub-rol
+    if (pasivaSubRol) {
+        const divSubRol = document.createElement("div");
+        divSubRol.id = "modalSubRol";
+        divSubRol.className = "w-100 rounded p-2 text-center bloque-pasiva-rol mt-2";
+        divSubRol.innerHTML = `
+            <div class="d-flex align-items-center gap-2">
+                <img src="${pasivaSubRol.icono}" style="width:28px;height:28px;object-fit:contain;"
+                     onerror="this.style.display='none'">
+                <div class="text-start">
+                    <strong class="small">${pasivaSubRol.titulo}</strong>
+                    <p class="small mb-0 texto-secundario">${pasivaSubRol.descripcion}</p>
+                </div>
+            </div>`;
+        document.getElementById("modalPasivaRol").after(divSubRol);
+        document.getElementById("modalPasivaRol").style.display = "block";
     }
 
     // Fila superior: armas + pasiva propia
@@ -167,6 +225,7 @@ function abrirDetalle(h) {
 document.getElementById("buscar").addEventListener("input", renderizar);
 document.getElementById("filtroRol").addEventListener("change", renderizar);
 document.getElementById("orden").addEventListener("change", renderizar);
+document.getElementById("filtroSubRol").addEventListener("change", renderizar);
 
 // Modo oscuro / claro
 document.getElementById("btnModo").addEventListener("click", () => {

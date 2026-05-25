@@ -169,6 +169,8 @@ header h1 {
 
 .bloque-pasiva-rol {
     background-color: #0f3460;
+    min-height: 0;
+    width: 100%;
 }
 
 .bloque-definitiva {
@@ -178,6 +180,10 @@ header h1 {
 
 .texto-secundario {
     color: #aaa;
+}
+
+.modal-detalle-custom {
+    max-width: 944px;
 }
 
 /* ---------------------- Modo Claro ---------------------- */
